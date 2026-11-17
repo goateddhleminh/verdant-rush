@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import * as THREE from 'three';
 import {
   Bloom,
@@ -32,6 +32,7 @@ export const PostEffects: React.FC<{
   const session = getActiveSession();
   const flowSat = session?.flow.currentSaturation || 0;
   const flowChrom = reducedMotion ? 0 : session?.flow.currentChromatic || 0;
+  const chromOffset = useMemo(() => new THREE.Vector2(flowChrom, flowChrom * 0.5), [flowChrom]);
 
   let filterSatOffset = 0;
   let filterHueOffset = photoWarmth * 0.05;
@@ -60,7 +61,7 @@ export const PostEffects: React.FC<{
         saturation={Math.min(0.4, (lightCfg.saturation - 1) + flowSat + filterSatOffset)}
       />
       <ChromaticAberration
-        offset={new THREE.Vector2(flowChrom, flowChrom * 0.5)}
+        offset={chromOffset}
         radialModulation={false}
         modulationOffset={0.15}
       />

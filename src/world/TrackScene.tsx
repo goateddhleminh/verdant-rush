@@ -4,7 +4,7 @@ import { useFrame } from '@react-three/fiber';
 import { TrackId } from '../data/types';
 import { getGameData, getVehicleById } from '../data/gameData';
 import { getCachedTexture, loadGltfCached } from '../data/assetLoader';
-import { useGameStore } from '../store/useGameStore';
+import { getDefaultCustomisation, useGameStore } from '../store/useGameStore';
 import { getActiveSession } from '../game/loop';
 import { InstancedProps } from './InstancedProps';
 import { LivingWorld } from './LivingWorld';
@@ -21,14 +21,15 @@ export const TrackScene: React.FC<{
   };
 }> = ({ photoSettings }) => {
   const screen = useGameStore((s) => s.screen);
-  const raceConfig = useGameStore((s) => s.raceConfig);
+  const raceTrackId = useGameStore((s) => s.raceConfig.trackId);
+  const gentleRain = useGameStore((s) => s.raceConfig.gentleRain);
   const selectedVehicleId = useGameStore((s) => s.selectedVehicleId);
   const settings = useGameStore((s) => s.settings);
-  const restartToken = useGameStore((s) => s.raceRestartToken);
+  const customisations = useGameStore((s) => s.customisations);
 
   const activeTrackId: TrackId =
     screen === 'race' || screen === 'results'
-      ? raceConfig.trackId
+      ? raceTrackId
       : 'emerald-valley';
 
   const data = getGameData();
@@ -114,11 +115,8 @@ export const TrackScene: React.FC<{
   }, [activeTrackId]);
 
   const playerVehicleDef = getVehicleById(selectedVehicleId);
-  const playerCustomisation = useGameStore((s) =>
-    s.getVehicleCustomisation(selectedVehicleId)
-  );
+  const playerCustomisation = customisations[selectedVehicleId] || getDefaultCustomisation(selectedVehicleId);
   const session = getActiveSession();
-  void restartToken;
 
   // Garage Turntable Scene
   if (screen === 'garage') {
@@ -244,7 +242,7 @@ export const TrackScene: React.FC<{
         ))}
 
       {/* Gentle Rain Rainbow Arc near Start/Finish */}
-      {raceConfig.gentleRain && (
+      {gentleRain && (
         <mesh position={[260, 22, 0]} rotation={[0, 0.4, 0]}>
           <torusGeometry args={[95, 3.2, 12, 48, Math.PI]} />
           <meshBasicMaterial
@@ -271,7 +269,7 @@ export const TrackScene: React.FC<{
             trackId={activeTrackId}
             quality={settings.quality}
             reducedMotion={settings.reducedMotion}
-            gentleRain={raceConfig.gentleRain}
+            gentleRain={gentleRain}
           />
 
           {/* Player Vehicle */}

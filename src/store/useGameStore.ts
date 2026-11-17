@@ -273,6 +273,35 @@ export interface GameStoreState extends PersistedSaveData {
   resetProgress: () => void;
 }
 
+const defaultUpgrades: VehicleUpgrades = { engine: 0, tyres: 0, nitro: 0, chassis: 0 };
+const defaultCustomisationsCache = new Map<string, VehicleCustomisation>();
+
+export function getDefaultCustomisation(vehicleId: string): VehicleCustomisation {
+  let cached = defaultCustomisationsCache.get(vehicleId);
+  if (!cached) {
+    try {
+      const v = getVehicleById(vehicleId);
+      cached = {
+        liveryId: 'custom',
+        color: v.defaultColor,
+        accent: v.defaultAccent,
+        wheelStyle: v.defaultWheel || 'sport',
+        plateText: 'VERDANT',
+      };
+    } catch {
+      cached = {
+        liveryId: 'moss',
+        color: '#5BA55B',
+        accent: '#F5EFD9',
+        wheelStyle: 'sport',
+        plateText: 'VERDANT',
+      };
+    }
+    defaultCustomisationsCache.set(vehicleId, cached);
+  }
+  return cached;
+}
+
 const initialSave = getInitialSave();
 
 function persistState(state: GameStoreState) {
@@ -301,7 +330,7 @@ let juiceSeq = 1;
 
 export const useGameStore = create<GameStoreState>((set, get) => ({
   ...initialSave,
-  screen: 'loading',
+  screen: 'menu',
   settingsOpen: false,
   helpOpen: false,
   isPaused: false,
@@ -465,31 +494,11 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
   },
 
   getVehicleUpgrades: (vehicleId) => {
-    const u = get().upgrades[vehicleId];
-    return u || { engine: 0, tyres: 0, nitro: 0, chassis: 0 };
+    return get().upgrades[vehicleId] || defaultUpgrades;
   },
 
   getVehicleCustomisation: (vehicleId) => {
-    const existing = get().customisations[vehicleId];
-    if (existing) return existing;
-    try {
-      const v = getVehicleById(vehicleId);
-      return {
-        liveryId: 'custom',
-        color: v.defaultColor,
-        accent: v.defaultAccent,
-        wheelStyle: v.defaultWheel || 'sport',
-        plateText: 'VERDANT',
-      };
-    } catch {
-      return {
-        liveryId: 'moss',
-        color: '#5BA55B',
-        accent: '#F5EFD9',
-        wheelStyle: 'sport',
-        plateText: 'VERDANT',
-      };
-    }
+    return get().customisations[vehicleId] || getDefaultCustomisation(vehicleId);
   },
 
   startRace: (config) => {

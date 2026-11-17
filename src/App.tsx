@@ -23,8 +23,10 @@ export const App: React.FC = () => {
   const [loadStatus, setLoadStatus] = useState('Opening forest road...');
 
   const screen = useGameStore((s) => s.screen);
-  const settings = useGameStore((s) => s.settings);
-  const raceConfig = useGameStore((s) => s.raceConfig);
+  const trackId = useGameStore((s) => s.raceConfig.trackId);
+  const quality = useGameStore((s) => s.settings.quality);
+  const showFps = useGameStore((s) => s.settings.showFps);
+  const baseFov = useGameStore((s) => s.settings.baseFov);
 
   // FPS tracking
   const [fps, setFps] = useState(60);
@@ -44,12 +46,16 @@ export const App: React.FC = () => {
         if (mounted) {
           setTimeout(() => {
             setIsLoading(false);
+            useGameStore.getState().setScreen('menu');
           }, 300);
         }
       })
       .catch((err) => {
         console.error('Asset load error, proceeding with procedural fallbacks:', err);
-        if (mounted) setIsLoading(false);
+        if (mounted) {
+          setIsLoading(false);
+          useGameStore.getState().setScreen('menu');
+        }
       });
 
     return () => {
@@ -78,24 +84,24 @@ export const App: React.FC = () => {
 
     if (screen === 'race') {
       const musicId =
-        raceConfig.trackId === 'amber-woods'
+        trackId === 'amber-woods'
           ? 'music-amber-woods'
-          : raceConfig.trackId === 'lakeside-haven'
+          : trackId === 'lakeside-haven'
           ? 'music-lakeside'
           : 'music-emerald-valley';
 
       audioManager.playMusic(musicId);
-      audioManager.startAmbience(raceConfig.trackId);
+      audioManager.startAmbience(trackId);
     } else {
       // Menu / Garage / Results ambient music
       audioManager.playMusic('music-emerald-valley');
       audioManager.stopAmbience();
     }
-  }, [screen, raceConfig.trackId, isLoading]);
+  }, [screen, trackId, isLoading]);
 
   // FPS calculation loop
   useEffect(() => {
-    if (!settings.showFps) return;
+    if (!showFps) return;
     let animId: number;
     const calcFps = () => {
       fpsFramesRef.current++;
@@ -109,7 +115,7 @@ export const App: React.FC = () => {
     };
     animId = requestAnimationFrame(calcFps);
     return () => cancelAnimationFrame(animId);
-  }, [settings.showFps]);
+  }, [showFps]);
 
   if (isLoading) {
     return <LoadingScreen progress={loadProgress} statusText={loadStatus} />;
@@ -120,11 +126,11 @@ export const App: React.FC = () => {
       {/* 3D WebGL Canvas Viewport */}
       <div className="absolute inset-0 z-0">
         <Canvas
-          shadows={settings.quality !== 'low'}
+          shadows={quality !== 'low'}
           dpr={Math.min(1.75, typeof window !== 'undefined' ? window.devicePixelRatio || 1 : 1)}
           camera={{
             position: [0, 6, -12],
-            fov: settings.baseFov,
+            fov: baseFov,
             near: 0.1,
             far: 1800,
           }}
@@ -156,9 +162,9 @@ export const App: React.FC = () => {
       <ToastContainer />
 
       {/* FPS & Performance Pill */}
-      {settings.showFps && (
+      {showFps && (
         <div className="fixed top-3 left-3 z-50 bg-black/70 backdrop-blur-md border border-white/10 px-2.5 py-1 rounded-lg text-[10px] font-mono text-emerald-400 pointer-events-none">
-          {fps} FPS • {settings.quality.toUpperCase()}
+          {fps} FPS • {quality.toUpperCase()}
         </div>
       )}
     </div>
