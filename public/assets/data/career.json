@@ -1,0 +1,230 @@
+{
+ "version": 1,
+ "cups": [
+  {
+   "id": "sprout",
+   "name": "Sprout Cup",
+   "unlock": {
+    "leaves": 0
+   },
+   "events": [
+    {
+     "id": "sprout-1",
+     "name": "First Breath",
+     "type": "race",
+     "track": "emerald-valley",
+     "laps": 2,
+     "difficulty": "chill",
+     "rivals": 5,
+     "rewards": {
+      "cash": 600,
+      "xp": 120
+     },
+     "leaves": {
+      "1": "finish",
+      "2": "top 3",
+      "3": "win"
+     },
+     "vehicleClass": "any"
+    },
+    {
+     "id": "sprout-2",
+     "name": "Morning Dew",
+     "type": "time-trial",
+     "track": "emerald-valley",
+     "laps": 2,
+     "targetSeconds": {
+      "1": 150,
+      "2": 135,
+      "3": 120
+     },
+     "rewards": {
+      "cash": 700,
+      "xp": 140
+     }
+    },
+    {
+     "id": "sprout-3",
+     "name": "Slide Into Spring",
+     "type": "drift",
+     "track": "emerald-valley",
+     "laps": 2,
+     "targetScore": {
+      "1": 8000,
+      "2": 18000,
+      "3": 30000
+     },
+     "rewards": {
+      "cash": 800,
+      "xp": 160
+     }
+    },
+    {
+     "id": "sprout-4",
+     "name": "Gentle Elimination",
+     "type": "elimination",
+     "track": "emerald-valley",
+     "rivals": 7,
+     "eliminationEverySeconds": 20,
+     "rewards": {
+      "cash": 900,
+      "xp": 200
+     }
+    }
+   ]
+  },
+  {
+   "id": "canopy",
+   "name": "Canopy Cup",
+   "unlock": {
+    "leaves": 8
+   },
+   "events": [
+    {
+     "id": "canopy-1",
+     "name": "Golden Hour",
+     "type": "race",
+     "track": "amber-woods",
+     "laps": 3,
+     "difficulty": "normal",
+     "rivals": 7,
+     "rewards": {
+      "cash": 1500,
+      "xp": 300
+     }
+    },
+    {
+     "id": "canopy-2",
+     "name": "Leaf Chaser",
+     "type": "time-trial",
+     "track": "amber-woods",
+     "laps": 2,
+     "targetSeconds": {
+      "1": 230,
+      "2": 205,
+      "3": 185
+     },
+     "rewards": {
+      "cash": 1700,
+      "xp": 320
+     }
+    },
+    {
+     "id": "canopy-3",
+     "name": "Autumn Slide",
+     "type": "drift",
+     "track": "amber-woods",
+     "laps": 2,
+     "targetScore": {
+      "1": 20000,
+      "2": 40000,
+      "3": 65000
+     },
+     "rewards": {
+      "cash": 1900,
+      "xp": 340
+     }
+    },
+    {
+     "id": "canopy-4",
+     "name": "Falling Behind",
+     "type": "elimination",
+     "track": "amber-woods",
+     "rivals": 7,
+     "eliminationEverySeconds": 20,
+     "rewards": {
+      "cash": 2100,
+      "xp": 380
+     }
+    }
+   ]
+  },
+  {
+   "id": "summit",
+   "name": "Summit Cup",
+   "unlock": {
+    "leaves": 20
+   },
+   "events": [
+    {
+     "id": "summit-1",
+     "name": "Cliffside Cruise",
+     "type": "race",
+     "track": "lakeside-haven",
+     "laps": 3,
+     "difficulty": "hard",
+     "rivals": 7,
+     "rewards": {
+      "cash": 3000,
+      "xp": 500
+     }
+    },
+    {
+     "id": "summit-2",
+     "name": "Turquoise Dash",
+     "type": "time-trial",
+     "track": "lakeside-haven",
+     "laps": 2,
+     "targetSeconds": {
+      "1": 200,
+      "2": 180,
+      "3": 165
+     },
+     "rewards": {
+      "cash": 3300,
+      "xp": 520
+     }
+    },
+    {
+     "id": "summit-3",
+     "name": "Lakeside Sideways",
+     "type": "drift",
+     "track": "lakeside-haven",
+     "laps": 2,
+     "targetScore": {
+      "1": 40000,
+      "2": 80000,
+      "3": 120000
+     },
+     "rewards": {
+      "cash": 3600,
+      "xp": 540
+     }
+    },
+    {
+     "id": "summit-4",
+     "name": "Last Leaf Standing",
+     "type": "elimination",
+     "track": "lakeside-haven",
+     "rivals": 7,
+     "eliminationEverySeconds": 20,
+     "rewards": {
+      "cash": 4200,
+      "xp": 600
+     }
+    }
+   ]
+  }
+ ],
+ "levels": {
+  "xpCurve": "xpForLevel(n) = 150 * n^1.4",
+  "milestones": [
+   {
+    "level": 3,
+    "unlocks": "Ember Coupe"
+   },
+   {
+    "level": 5,
+    "unlocks": "Amber Woods rain variant"
+   },
+   {
+    "level": 8,
+    "unlocks": "Lakeside Haven"
+   },
+   {
+    "level": 10,
+    "unlocks": "Gentle Rain variant"
+   }
+  ]
+ }
+}

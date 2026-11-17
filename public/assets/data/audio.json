@@ -1,0 +1,272 @@
+{
+ "version": 1,
+ "sampleRate": 22050,
+ "format": "wav mono 16-bit",
+ "buses": {
+  "master": 1,
+  "music": 0.7,
+  "sfx": 0.9,
+  "ambience": 0.6,
+  "ui": 0.8
+ },
+ "engine": {
+  "car": {
+   "file": "audio/sfx/engine-car-loop.wav",
+   "rateRange": [
+    0.6,
+    2.6
+   ]
+  },
+  "bike": {
+   "file": "audio/sfx/engine-bike-loop.wav",
+   "rateRange": [
+    0.6,
+    2.3
+   ]
+  }
+ },
+ "oneShotMinGapMs": 80,
+ "music": {
+  "menu": "music-menu",
+  "emerald-valley": "music-emerald-valley",
+  "amber-woods": "music-amber-woods",
+  "lakeside-haven": "music-lakeside"
+ },
+ "ambience": {
+  "emerald-valley": "forest-birds-loop",
+  "amber-woods": "autumn-wind-loop",
+  "lakeside-haven": "lake-waves-loop"
+ },
+ "crossfadeSec": 1.5,
+ "files": [
+  {
+   "id": "engine-car-loop",
+   "file": "audio/sfx/engine-car-loop.wav",
+   "category": "sfx",
+   "durationSec": 1,
+   "sampleRate": 22050,
+   "channels": 1,
+   "loop": true,
+   "use": "rpm -> playbackRate 0.6..2.6, throttle -> gain + lowpass"
+  },
+  {
+   "id": "engine-bike-loop",
+   "file": "audio/sfx/engine-bike-loop.wav",
+   "category": "sfx",
+   "durationSec": 1,
+   "sampleRate": 22050,
+   "channels": 1,
+   "loop": true,
+   "use": "rpm -> playbackRate 0.6..2.3"
+  },
+  {
+   "id": "skid-loop",
+   "file": "audio/sfx/skid-loop.wav",
+   "category": "sfx",
+   "durationSec": 1.72,
+   "sampleRate": 22050,
+   "channels": 1,
+   "loop": true,
+   "use": "tyre squeal, gain from slip"
+  },
+  {
+   "id": "wind-loop",
+   "file": "audio/sfx/wind-loop.wav",
+   "category": "sfx",
+   "durationSec": 3.14,
+   "sampleRate": 22050,
+   "channels": 1,
+   "loop": true,
+   "use": "gain + rate from speed"
+  },
+  {
+   "id": "gravel-loop",
+   "file": "audio/sfx/gravel-loop.wav",
+   "category": "sfx",
+   "durationSec": 2.17,
+   "sampleRate": 22050,
+   "channels": 1,
+   "loop": true,
+   "use": "off-road, gain from speed"
+  },
+  {
+   "id": "nitro",
+   "file": "audio/sfx/nitro.wav",
+   "category": "sfx",
+   "durationSec": 1.7,
+   "sampleRate": 22050,
+   "channels": 1,
+   "use": "nitro start whoosh"
+  },
+  {
+   "id": "bump-soft",
+   "file": "audio/sfx/bump-soft.wav",
+   "category": "sfx",
+   "durationSec": 0.45,
+   "sampleRate": 22050,
+   "channels": 1,
+   "use": "soft collision, gain by impact"
+  },
+  {
+   "id": "splash",
+   "file": "audio/sfx/splash.wav",
+   "category": "sfx",
+   "durationSec": 0.85,
+   "sampleRate": 22050,
+   "channels": 1,
+   "use": "puddle / stream splash"
+  },
+  {
+   "id": "gear-shift",
+   "file": "audio/sfx/gear-shift.wav",
+   "category": "sfx",
+   "durationSec": 0.14,
+   "sampleRate": 22050,
+   "channels": 1,
+   "use": "gear click"
+  },
+  {
+   "id": "boost-pad",
+   "file": "audio/sfx/boost-pad.wav",
+   "category": "sfx",
+   "durationSec": 0.9,
+   "sampleRate": 22050,
+   "channels": 1,
+   "use": "boost pad sparkle whoosh"
+  },
+  {
+   "id": "ui-click",
+   "file": "audio/sfx/ui-click.wav",
+   "category": "sfx",
+   "durationSec": 0.11,
+   "sampleRate": 22050,
+   "channels": 1,
+   "use": "ui"
+  },
+  {
+   "id": "ui-hover",
+   "file": "audio/sfx/ui-hover.wav",
+   "category": "sfx",
+   "durationSec": 0.08,
+   "sampleRate": 22050,
+   "channels": 1,
+   "use": "ui"
+  },
+  {
+   "id": "countdown-beep",
+   "file": "audio/sfx/countdown-beep.wav",
+   "category": "sfx",
+   "durationSec": 0.32,
+   "sampleRate": 22050,
+   "channels": 1,
+   "use": "countdown 3-2-1"
+  },
+  {
+   "id": "countdown-go",
+   "file": "audio/sfx/countdown-go.wav",
+   "category": "sfx",
+   "durationSec": 0.8,
+   "sampleRate": 22050,
+   "channels": 1,
+   "use": "GO!"
+  },
+  {
+   "id": "lap-chime",
+   "file": "audio/sfx/lap-chime.wav",
+   "category": "sfx",
+   "durationSec": 1.4,
+   "sampleRate": 22050,
+   "channels": 1,
+   "use": "lap complete"
+  },
+  {
+   "id": "win-jingle",
+   "file": "audio/sfx/win-jingle.wav",
+   "category": "sfx",
+   "durationSec": 3,
+   "sampleRate": 22050,
+   "channels": 1,
+   "use": "finish / podium"
+  },
+  {
+   "id": "forest-birds-loop",
+   "file": "audio/ambience/forest-birds-loop.wav",
+   "category": "ambience",
+   "durationSec": 8.46,
+   "sampleRate": 22050,
+   "channels": 1,
+   "loop": true,
+   "track": "emerald-valley"
+  },
+  {
+   "id": "stream-loop",
+   "file": "audio/ambience/stream-loop.wav",
+   "category": "ambience",
+   "durationSec": 4.59,
+   "sampleRate": 22050,
+   "channels": 1,
+   "loop": true,
+   "use": "positional near water"
+  },
+  {
+   "id": "autumn-wind-loop",
+   "file": "audio/ambience/autumn-wind-loop.wav",
+   "category": "ambience",
+   "durationSec": 5.46,
+   "sampleRate": 22050,
+   "channels": 1,
+   "loop": true,
+   "track": "amber-woods"
+  },
+  {
+   "id": "lake-waves-loop",
+   "file": "audio/ambience/lake-waves-loop.wav",
+   "category": "ambience",
+   "durationSec": 5.46,
+   "sampleRate": 22050,
+   "channels": 1,
+   "loop": true,
+   "track": "lakeside-haven"
+  },
+  {
+   "id": "music-menu",
+   "file": "audio/music/music-menu.wav",
+   "category": "music",
+   "durationSec": 18,
+   "sampleRate": 22050,
+   "channels": 1,
+   "loop": true,
+   "use": "menus and garage"
+  },
+  {
+   "id": "music-emerald-valley",
+   "file": "audio/music/music-emerald-valley.wav",
+   "category": "music",
+   "durationSec": 14.4,
+   "sampleRate": 22050,
+   "channels": 1,
+   "loop": true,
+   "track": "emerald-valley"
+  },
+  {
+   "id": "music-amber-woods",
+   "file": "audio/music/music-amber-woods.wav",
+   "category": "music",
+   "durationSec": 16.36,
+   "sampleRate": 22050,
+   "channels": 1,
+   "loop": true,
+   "track": "amber-woods"
+  },
+  {
+   "id": "music-lakeside",
+   "file": "audio/music/music-lakeside.wav",
+   "category": "music",
+   "durationSec": 13.33,
+   "sampleRate": 22050,
+   "channels": 1,
+   "loop": true,
+   "track": "lakeside-haven"
+  }
+ ]
+}

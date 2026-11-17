@@ -1,0 +1,1192 @@
+{
+ "name": "Verdant Rush asset pack",
+ "version": "1.0.0",
+ "summary": {
+  "audio": {
+   "files": 24,
+   "bytes": 4624290
+  },
+  "data": {
+   "files": 10,
+   "bytes": 474974
+  },
+  "images": {
+   "files": 59,
+   "bytes": 1800947
+  },
+  "environment-models": {
+   "files": 92,
+   "bytes": 2360776
+  },
+  "maps": {
+   "files": 3,
+   "bytes": 4880632
+  },
+  "bikes": {
+   "files": 12,
+   "bytes": 3057904
+  },
+  "cars": {
+   "files": 24,
+   "bytes": 6131920
+  },
+  "wheels": {
+   "files": 5,
+   "bytes": 206896
+  },
+  "particles": {
+   "files": 18,
+   "bytes": 162842
+  },
+  "textures": {
+   "files": 10,
+   "bytes": 420181
+  },
+  "ui": {
+   "files": 28,
+   "bytes": 16686
+  }
+ },
+ "files": [
+  {
+   "path": "assets/audio/ambience/autumn-wind-loop.wav",
+   "bytes": 240644
+  },
+  {
+   "path": "assets/audio/ambience/forest-birds-loop.wav",
+   "bytes": 372944
+  },
+  {
+   "path": "assets/audio/ambience/lake-waves-loop.wav",
+   "bytes": 240644
+  },
+  {
+   "path": "assets/audio/ambience/stream-loop.wav",
+   "bytes": 202544
+  },
+  {
+   "path": "assets/audio/music/music-amber-woods.wav",
+   "bytes": 721680
+  },
+  {
+   "path": "assets/audio/music/music-emerald-valley.wav",
+   "bytes": 635084
+  },
+  {
+   "path": "assets/audio/music/music-lakeside.wav",
+   "bytes": 588044
+  },
+  {
+   "path": "assets/audio/music/music-menu.wav",
+   "bytes": 793844
+  },
+  {
+   "path": "assets/audio/sfx/boost-pad.wav",
+   "bytes": 39734
+  },
+  {
+   "path": "assets/audio/sfx/bump-soft.wav",
+   "bytes": 19890
+  },
+  {
+   "path": "assets/audio/sfx/countdown-beep.wav",
+   "bytes": 14156
+  },
+  {
+   "path": "assets/audio/sfx/countdown-go.wav",
+   "bytes": 35324
+  },
+  {
+   "path": "assets/audio/sfx/engine-bike-loop.wav",
+   "bytes": 44144
+  },
+  {
+   "path": "assets/audio/sfx/engine-car-loop.wav",
+   "bytes": 44144
+  },
+  {
+   "path": "assets/audio/sfx/gear-shift.wav",
+   "bytes": 6218
+  },
+  {
+   "path": "assets/audio/sfx/gravel-loop.wav",
+   "bytes": 95884
+  },
+  {
+   "path": "assets/audio/sfx/lap-chime.wav",
+   "bytes": 61784
+  },
+  {
+   "path": "assets/audio/sfx/nitro.wav",
+   "bytes": 75014
+  },
+  {
+   "path": "assets/audio/sfx/skid-loop.wav",
+   "bytes": 75834
+  },
+  {
+   "path": "assets/audio/sfx/splash.wav",
+   "bytes": 37530
+  },
+  {
+   "path": "assets/audio/sfx/ui-click.wav",
+   "bytes": 4896
+  },
+  {
+   "path": "assets/audio/sfx/ui-hover.wav",
+   "bytes": 3572
+  },
+  {
+   "path": "assets/audio/sfx/win-jingle.wav",
+   "bytes": 132344
+  },
+  {
+   "path": "assets/audio/sfx/wind-loop.wav",
+   "bytes": 138394
+  },
+  {
+   "path": "assets/data/achievements.json",
+   "bytes": 3344
+  },
+  {
+   "path": "assets/data/audio.json",
+   "bytes": 5644
+  },
+  {
+   "path": "assets/data/career.json",
+   "bytes": 3932
+  },
+  {
+   "path": "assets/data/maps/amber-woods-props.json",
+   "bytes": 138221
+  },
+  {
+   "path": "assets/data/maps/emerald-valley-props.json",
+   "bytes": 99651
+  },
+  {
+   "path": "assets/data/maps/lakeside-haven-props.json",
+   "bytes": 125734
+  },
+  {
+   "path": "assets/data/theme.json",
+   "bytes": 4508
+  },
+  {
+   "path": "assets/data/tracks.json",
+   "bytes": 14265
+  },
+  {
+   "path": "assets/data/vehicle-blueprints.json",
+   "bytes": 25293
+  },
+  {
+   "path": "assets/data/vehicles.json",
+   "bytes": 54382
+  },
+  {
+   "path": "assets/images/garage-bg.jpg",
+   "bytes": 114217
+  },
+  {
+   "path": "assets/images/hero-forest.jpg",
+   "bytes": 230214
+  },
+  {
+   "path": "assets/images/maps/heightmap-amber-woods.png",
+   "bytes": 20016
+  },
+  {
+   "path": "assets/images/maps/heightmap-emerald-valley.png",
+   "bytes": 20740
+  },
+  {
+   "path": "assets/images/maps/heightmap-lakeside-haven.png",
+   "bytes": 15120
+  },
+  {
+   "path": "assets/images/maps/map-amber-woods.jpg",
+   "bytes": 70669
+  },
+  {
+   "path": "assets/images/maps/map-emerald-valley.jpg",
+   "bytes": 54636
+  },
+  {
+   "path": "assets/images/maps/map-lakeside-haven.jpg",
+   "bytes": 59415
+  },
+  {
+   "path": "assets/images/maps/minimap-amber-woods.svg",
+   "bytes": 19191
+  },
+  {
+   "path": "assets/images/maps/minimap-emerald-valley.svg",
+   "bytes": 14214
+  },
+  {
+   "path": "assets/images/maps/minimap-lakeside-haven.svg",
+   "bytes": 17631
+  },
+  {
+   "path": "assets/images/previews/preview-animals.jpg",
+   "bytes": 14518
+  },
+  {
+   "path": "assets/images/previews/preview-bikes.jpg",
+   "bytes": 53627
+  },
+  {
+   "path": "assets/images/previews/preview-buildings.jpg",
+   "bytes": 18330
+  },
+  {
+   "path": "assets/images/previews/preview-bushes.jpg",
+   "bytes": 11503
+  },
+  {
+   "path": "assets/images/previews/preview-cars.jpg",
+   "bytes": 134923
+  },
+  {
+   "path": "assets/images/previews/preview-flora.jpg",
+   "bytes": 26808
+  },
+  {
+   "path": "assets/images/previews/preview-props.jpg",
+   "bytes": 19042
+  },
+  {
+   "path": "assets/images/previews/preview-rocks.jpg",
+   "bytes": 23796
+  },
+  {
+   "path": "assets/images/previews/preview-terrain.jpg",
+   "bytes": 19639
+  },
+  {
+   "path": "assets/images/previews/preview-track.jpg",
+   "bytes": 27218
+  },
+  {
+   "path": "assets/images/previews/preview-trees.jpg",
+   "bytes": 48161
+  },
+  {
+   "path": "assets/images/sky-day.jpg",
+   "bytes": 29146
+  },
+  {
+   "path": "assets/images/thumbs/acorn-kei.webp",
+   "bytes": 8760
+  },
+  {
+   "path": "assets/images/thumbs/aspen-suv.webp",
+   "bytes": 8138
+  },
+  {
+   "path": "assets/images/thumbs/birch-sedan.webp",
+   "bytes": 8900
+  },
+  {
+   "path": "assets/images/thumbs/cedar-pickup.webp",
+   "bytes": 9188
+  },
+  {
+   "path": "assets/images/thumbs/clover-compact.webp",
+   "bytes": 8784
+  },
+  {
+   "path": "assets/images/thumbs/comet-hyper.webp",
+   "bytes": 8816
+  },
+  {
+   "path": "assets/images/thumbs/daisy-scooter.webp",
+   "bytes": 13360
+  },
+  {
+   "path": "assets/images/thumbs/dune-runner.webp",
+   "bytes": 11638
+  },
+  {
+   "path": "assets/images/thumbs/ember-coupe.webp",
+   "bytes": 10798
+  },
+  {
+   "path": "assets/images/thumbs/falcon-super.webp",
+   "bytes": 10372
+  },
+  {
+   "path": "assets/images/thumbs/fern-250.webp",
+   "bytes": 14526
+  },
+  {
+   "path": "assets/images/thumbs/fox-gt.webp",
+   "bytes": 10846
+  },
+  {
+   "path": "assets/images/thumbs/grove-classic.webp",
+   "bytes": 9200
+  },
+  {
+   "path": "assets/images/thumbs/hawk-adventure.webp",
+   "bytes": 7444
+  },
+  {
+   "path": "assets/images/thumbs/heron-hothatch.webp",
+   "bytes": 10068
+  },
+  {
+   "path": "assets/images/thumbs/lantern-taxi.webp",
+   "bytes": 10758
+  },
+  {
+   "path": "assets/images/thumbs/lark-van.webp",
+   "bytes": 9424
+  },
+  {
+   "path": "assets/images/thumbs/maple-muscle.webp",
+   "bytes": 9260
+  },
+  {
+   "path": "assets/images/thumbs/moss-hatch.webp",
+   "bytes": 9044
+  },
+  {
+   "path": "assets/images/thumbs/oak-cruiser.webp",
+   "bytes": 11730
+  },
+  {
+   "path": "assets/images/thumbs/pebble-trials.webp",
+   "bytes": 14180
+  },
+  {
+   "path": "assets/images/thumbs/pine-wagon.webp",
+   "bytes": 8082
+  },
+  {
+   "path": "assets/images/thumbs/rally-fury.webp",
+   "bytes": 11114
+  },
+  {
+   "path": "assets/images/thumbs/stoneback-crawler.webp",
+   "bytes": 8530
+  },
+  {
+   "path": "assets/images/thumbs/sunbeam-roadster.webp",
+   "bytes": 9684
+  },
+  {
+   "path": "assets/images/thumbs/thistle-estate.webp",
+   "bytes": 8008
+  },
+  {
+   "path": "assets/images/thumbs/thorn-sport.webp",
+   "bytes": 10210
+  },
+  {
+   "path": "assets/images/thumbs/timberline-4x4.webp",
+   "bytes": 7062
+  },
+  {
+   "path": "assets/images/thumbs/trail-bus.webp",
+   "bytes": 10718
+  },
+  {
+   "path": "assets/images/thumbs/willow-cabrio.webp",
+   "bytes": 9510
+  },
+  {
+   "path": "assets/images/track-amber-woods.jpg",
+   "bytes": 120287
+  },
+  {
+   "path": "assets/images/track-emerald-valley.jpg",
+   "bytes": 107538
+  },
+  {
+   "path": "assets/images/track-lakeside.jpg",
+   "bytes": 93075
+  },
+  {
+   "path": "assets/images/vehicle-bike.jpg",
+   "bytes": 63155
+  },
+  {
+   "path": "assets/images/vehicle-car.jpg",
+   "bytes": 55281
+  },
+  {
+   "path": "assets/models/environment/animals/butterfly-blue.glb",
+   "bytes": 8656
+  },
+  {
+   "path": "assets/models/environment/animals/butterfly-orange.glb",
+   "bytes": 8660
+  },
+  {
+   "path": "assets/models/environment/animals/deer.glb",
+   "bytes": 57860
+  },
+  {
+   "path": "assets/models/environment/animals/fawn.glb",
+   "bytes": 57844
+  },
+  {
+   "path": "assets/models/environment/animals/rabbit.glb",
+   "bytes": 15984
+  },
+  {
+   "path": "assets/models/environment/animals/seagull.glb",
+   "bytes": 13044
+  },
+  {
+   "path": "assets/models/environment/animals/songbird-blue.glb",
+   "bytes": 13024
+  },
+  {
+   "path": "assets/models/environment/animals/songbird-red.glb",
+   "bytes": 13012
+  },
+  {
+   "path": "assets/models/environment/buildings/birdhouse.glb",
+   "bytes": 7800
+  },
+  {
+   "path": "assets/models/environment/buildings/cabin.glb",
+   "bytes": 23800
+  },
+  {
+   "path": "assets/models/environment/buildings/covered-bridge.glb",
+   "bytes": 49580
+  },
+  {
+   "path": "assets/models/environment/buildings/dock.glb",
+   "bytes": 25060
+  },
+  {
+   "path": "assets/models/environment/buildings/rowboat.glb",
+   "bytes": 5140
+  },
+  {
+   "path": "assets/models/environment/buildings/tent.glb",
+   "bytes": 4484
+  },
+  {
+   "path": "assets/models/environment/buildings/waterfall.glb",
+   "bytes": 66180
+  },
+  {
+   "path": "assets/models/environment/buildings/wooden-bridge.glb",
+   "bytes": 13768
+  },
+  {
+   "path": "assets/models/environment/bushes/bush-a.glb",
+   "bytes": 27428
+  },
+  {
+   "path": "assets/models/environment/bushes/bush-autumn.glb",
+   "bytes": 27420
+  },
+  {
+   "path": "assets/models/environment/bushes/bush-b.glb",
+   "bytes": 20480
+  },
+  {
+   "path": "assets/models/environment/bushes/bush-flowering.glb",
+   "bytes": 42960
+  },
+  {
+   "path": "assets/models/environment/flora/fern.glb",
+   "bytes": 6648
+  },
+  {
+   "path": "assets/models/environment/flora/flowers-blue.glb",
+   "bytes": 37228
+  },
+  {
+   "path": "assets/models/environment/flora/flowers-pink.glb",
+   "bytes": 37232
+  },
+  {
+   "path": "assets/models/environment/flora/flowers-purple.glb",
+   "bytes": 37232
+  },
+  {
+   "path": "assets/models/environment/flora/flowers-red.glb",
+   "bytes": 37216
+  },
+  {
+   "path": "assets/models/environment/flora/flowers-white.glb",
+   "bytes": 37228
+  },
+  {
+   "path": "assets/models/environment/flora/flowers-yellow.glb",
+   "bytes": 36488
+  },
+  {
+   "path": "assets/models/environment/flora/grass-dry.glb",
+   "bytes": 4200
+  },
+  {
+   "path": "assets/models/environment/flora/grass-tall.glb",
+   "bytes": 4192
+  },
+  {
+   "path": "assets/models/environment/flora/grass-tuft.glb",
+   "bytes": 4188
+  },
+  {
+   "path": "assets/models/environment/flora/mushroom-cream.glb",
+   "bytes": 24196
+  },
+  {
+   "path": "assets/models/environment/flora/mushroom-red.glb",
+   "bytes": 55512
+  },
+  {
+   "path": "assets/models/environment/flora/reeds.glb",
+   "bytes": 29820
+  },
+  {
+   "path": "assets/models/environment/props/bench.glb",
+   "bytes": 5380
+  },
+  {
+   "path": "assets/models/environment/props/fallen-log.glb",
+   "bytes": 10844
+  },
+  {
+   "path": "assets/models/environment/props/falling-branch.glb",
+   "bytes": 24256
+  },
+  {
+   "path": "assets/models/environment/props/hay-bale.glb",
+   "bytes": 9180
+  },
+  {
+   "path": "assets/models/environment/props/log-pile.glb",
+   "bytes": 8488
+  },
+  {
+   "path": "assets/models/environment/props/pebbles.glb",
+   "bytes": 16604
+  },
+  {
+   "path": "assets/models/environment/props/pumpkin-cart.glb",
+   "bytes": 71816
+  },
+  {
+   "path": "assets/models/environment/props/pumpkin.glb",
+   "bytes": 21196
+  },
+  {
+   "path": "assets/models/environment/props/stump.glb",
+   "bytes": 10856
+  },
+  {
+   "path": "assets/models/environment/rocks/boulder-a.glb",
+   "bytes": 7240
+  },
+  {
+   "path": "assets/models/environment/rocks/boulder-b.glb",
+   "bytes": 7240
+  },
+  {
+   "path": "assets/models/environment/rocks/boulder-c.glb",
+   "bytes": 7244
+  },
+  {
+   "path": "assets/models/environment/rocks/cliff-chunk.glb",
+   "bytes": 32936
+  },
+  {
+   "path": "assets/models/environment/rocks/rock-a.glb",
+   "bytes": 7252
+  },
+  {
+   "path": "assets/models/environment/rocks/rock-b.glb",
+   "bytes": 7248
+  },
+  {
+   "path": "assets/models/environment/rocks/rock-c.glb",
+   "bytes": 7240
+  },
+  {
+   "path": "assets/models/environment/rocks/rock-cluster.glb",
+   "bytes": 45396
+  },
+  {
+   "path": "assets/models/environment/rocks/rock-d.glb",
+   "bytes": 7252
+  },
+  {
+   "path": "assets/models/environment/rocks/rock-e.glb",
+   "bytes": 7248
+  },
+  {
+   "path": "assets/models/environment/terrain/cloud-1.glb",
+   "bytes": 32168
+  },
+  {
+   "path": "assets/models/environment/terrain/cloud-2.glb",
+   "bytes": 25944
+  },
+  {
+   "path": "assets/models/environment/terrain/cloud-3.glb",
+   "bytes": 38404
+  },
+  {
+   "path": "assets/models/environment/terrain/hill-a.glb",
+   "bytes": 44700
+  },
+  {
+   "path": "assets/models/environment/terrain/hill-autumn.glb",
+   "bytes": 44704
+  },
+  {
+   "path": "assets/models/environment/terrain/mountain-far.glb",
+   "bytes": 70368
+  },
+  {
+   "path": "assets/models/environment/terrain/mountain-green.glb",
+   "bytes": 44688
+  },
+  {
+   "path": "assets/models/environment/terrain/mountain-rock.glb",
+   "bytes": 70380
+  },
+  {
+   "path": "assets/models/environment/track/boost-pad.glb",
+   "bytes": 10836
+  },
+  {
+   "path": "assets/models/environment/track/checkpoint-gate.glb",
+   "bytes": 10404
+  },
+  {
+   "path": "assets/models/environment/track/chevron-sign.glb",
+   "bytes": 6132
+  },
+  {
+   "path": "assets/models/environment/track/fence-wood.glb",
+   "bytes": 6320
+  },
+  {
+   "path": "assets/models/environment/track/guardrail.glb",
+   "bytes": 6328
+  },
+  {
+   "path": "assets/models/environment/track/jump-ramp.glb",
+   "bytes": 4172
+  },
+  {
+   "path": "assets/models/environment/track/kerb.glb",
+   "bytes": 3472
+  },
+  {
+   "path": "assets/models/environment/track/lamp-post.glb",
+   "bytes": 8116
+  },
+  {
+   "path": "assets/models/environment/track/leaf-patch.glb",
+   "bytes": 39868
+  },
+  {
+   "path": "assets/models/environment/track/puddle.glb",
+   "bytes": 8256
+  },
+  {
+   "path": "assets/models/environment/track/signpost.glb",
+   "bytes": 6328
+  },
+  {
+   "path": "assets/models/environment/track/start-finish-arch.glb",
+   "bytes": 32792
+  },
+  {
+   "path": "assets/models/environment/track/stone-wall.glb",
+   "bytes": 24480
+  },
+  {
+   "path": "assets/models/environment/trees/birch-a.glb",
+   "bytes": 44948
+  },
+  {
+   "path": "assets/models/environment/trees/birch-b.glb",
+   "bytes": 44980
+  },
+  {
+   "path": "assets/models/environment/trees/birch-c.glb",
+   "bytes": 44932
+  },
+  {
+   "path": "assets/models/environment/trees/dead-tree.glb",
+   "bytes": 9100
+  },
+  {
+   "path": "assets/models/environment/trees/maple-gold.glb",
+   "bytes": 54548
+  },
+  {
+   "path": "assets/models/environment/trees/maple-green.glb",
+   "bytes": 54520
+  },
+  {
+   "path": "assets/models/environment/trees/maple-orange.glb",
+   "bytes": 54548
+  },
+  {
+   "path": "assets/models/environment/trees/maple-red.glb",
+   "bytes": 54524
+  },
+  {
+   "path": "assets/models/environment/trees/oak-amber.glb",
+   "bytes": 55272
+  },
+  {
+   "path": "assets/models/environment/trees/oak-big.glb",
+   "bytes": 54540
+  },
+  {
+   "path": "assets/models/environment/trees/oak-green.glb",
+   "bytes": 55288
+  },
+  {
+   "path": "assets/models/environment/trees/pine-a.glb",
+   "bytes": 8664
+  },
+  {
+   "path": "assets/models/environment/trees/pine-b.glb",
+   "bytes": 9756
+  },
+  {
+   "path": "assets/models/environment/trees/pine-c.glb",
+   "bytes": 7588
+  },
+  {
+   "path": "assets/models/environment/trees/pine-dark.glb",
+   "bytes": 8668
+  },
+  {
+   "path": "assets/models/environment/trees/sapling.glb",
+   "bytes": 54536
+  },
+  {
+   "path": "assets/models/environment/trees/spruce-a.glb",
+   "bytes": 11980
+  },
+  {
+   "path": "assets/models/environment/trees/spruce-b.glb",
+   "bytes": 14160
+  },
+  {
+   "path": "assets/models/environment/trees/spruce-c.glb",
+   "bytes": 10884
+  },
+  {
+   "path": "assets/models/maps/amber-woods.glb",
+   "bytes": 1843608
+  },
+  {
+   "path": "assets/models/maps/emerald-valley.glb",
+   "bytes": 1340592
+  },
+  {
+   "path": "assets/models/maps/lakeside-haven.glb",
+   "bytes": 1696432
+  },
+  {
+   "path": "assets/models/vehicles/bikes/daisy-scooter-norider.glb",
+   "bytes": 184604
+  },
+  {
+   "path": "assets/models/vehicles/bikes/daisy-scooter.glb",
+   "bytes": 221016
+  },
+  {
+   "path": "assets/models/vehicles/bikes/fern-250-norider.glb",
+   "bytes": 321240
+  },
+  {
+   "path": "assets/models/vehicles/bikes/fern-250.glb",
+   "bytes": 357660
+  },
+  {
+   "path": "assets/models/vehicles/bikes/hawk-adventure-norider.glb",
+   "bytes": 203068
+  },
+  {
+   "path": "assets/models/vehicles/bikes/hawk-adventure.glb",
+   "bytes": 239480
+  },
+  {
+   "path": "assets/models/vehicles/bikes/oak-cruiser-norider.glb",
+   "bytes": 208232
+  },
+  {
+   "path": "assets/models/vehicles/bikes/oak-cruiser.glb",
+   "bytes": 244636
+  },
+  {
+   "path": "assets/models/vehicles/bikes/pebble-trials-norider.glb",
+   "bytes": 321248
+  },
+  {
+   "path": "assets/models/vehicles/bikes/pebble-trials.glb",
+   "bytes": 357652
+  },
+  {
+   "path": "assets/models/vehicles/bikes/thorn-sport-norider.glb",
+   "bytes": 181332
+  },
+  {
+   "path": "assets/models/vehicles/bikes/thorn-sport.glb",
+   "bytes": 217736
+  },
+  {
+   "path": "assets/models/vehicles/cars/acorn-kei.glb",
+   "bytes": 219388
+  },
+  {
+   "path": "assets/models/vehicles/cars/aspen-suv.glb",
+   "bytes": 217332
+  },
+  {
+   "path": "assets/models/vehicles/cars/birch-sedan.glb",
+   "bytes": 205104
+  },
+  {
+   "path": "assets/models/vehicles/cars/cedar-pickup.glb",
+   "bytes": 357640
+  },
+  {
+   "path": "assets/models/vehicles/cars/clover-compact.glb",
+   "bytes": 200724
+  },
+  {
+   "path": "assets/models/vehicles/cars/comet-hyper.glb",
+   "bytes": 249888
+  },
+  {
+   "path": "assets/models/vehicles/cars/dune-runner.glb",
+   "bytes": 351920
+  },
+  {
+   "path": "assets/models/vehicles/cars/ember-coupe.glb",
+   "bytes": 228596
+  },
+  {
+   "path": "assets/models/vehicles/cars/falcon-super.glb",
+   "bytes": 231156
+  },
+  {
+   "path": "assets/models/vehicles/cars/fox-gt.glb",
+   "bytes": 229180
+  },
+  {
+   "path": "assets/models/vehicles/cars/grove-classic.glb",
+   "bytes": 234156
+  },
+  {
+   "path": "assets/models/vehicles/cars/heron-hothatch.glb",
+   "bytes": 239832
+  },
+  {
+   "path": "assets/models/vehicles/cars/lantern-taxi.glb",
+   "bytes": 225112
+  },
+  {
+   "path": "assets/models/vehicles/cars/lark-van.glb",
+   "bytes": 260028
+  },
+  {
+   "path": "assets/models/vehicles/cars/maple-muscle.glb",
+   "bytes": 256620
+  },
+  {
+   "path": "assets/models/vehicles/cars/moss-hatch.glb",
+   "bytes": 230424
+  },
+  {
+   "path": "assets/models/vehicles/cars/pine-wagon.glb",
+   "bytes": 225492
+  },
+  {
+   "path": "assets/models/vehicles/cars/rally-fury.glb",
+   "bytes": 262784
+  },
+  {
+   "path": "assets/models/vehicles/cars/stoneback-crawler.glb",
+   "bytes": 375776
+  },
+  {
+   "path": "assets/models/vehicles/cars/sunbeam-roadster.glb",
+   "bytes": 223968
+  },
+  {
+   "path": "assets/models/vehicles/cars/thistle-estate.glb",
+   "bytes": 233936
+  },
+  {
+   "path": "assets/models/vehicles/cars/timberline-4x4.glb",
+   "bytes": 375892
+  },
+  {
+   "path": "assets/models/vehicles/cars/trail-bus.glb",
+   "bytes": 269020
+  },
+  {
+   "path": "assets/models/vehicles/cars/willow-cabrio.glb",
+   "bytes": 227952
+  },
+  {
+   "path": "assets/models/vehicles/wheels/wheel-classic.glb",
+   "bytes": 36476
+  },
+  {
+   "path": "assets/models/vehicles/wheels/wheel-mesh.glb",
+   "bytes": 38212
+  },
+  {
+   "path": "assets/models/vehicles/wheels/wheel-offroad.glb",
+   "bytes": 67016
+  },
+  {
+   "path": "assets/models/vehicles/wheels/wheel-sport.glb",
+   "bytes": 31660
+  },
+  {
+   "path": "assets/models/vehicles/wheels/wheel-turbine.glb",
+   "bytes": 33532
+  },
+  {
+   "path": "assets/particles/confetti-leaf.png",
+   "bytes": 4468
+  },
+  {
+   "path": "assets/particles/dust.png",
+   "bytes": 17252
+  },
+  {
+   "path": "assets/particles/godray.png",
+   "bytes": 13428
+  },
+  {
+   "path": "assets/particles/leaf-amber.png",
+   "bytes": 5069
+  },
+  {
+   "path": "assets/particles/leaf-gold.png",
+   "bytes": 5121
+  },
+  {
+   "path": "assets/particles/leaf-green.png",
+   "bytes": 5320
+  },
+  {
+   "path": "assets/particles/lens-flare.png",
+   "bytes": 30726
+  },
+  {
+   "path": "assets/particles/nitro-flame-glow.png",
+   "bytes": 6776
+  },
+  {
+   "path": "assets/particles/petal-pollen.png",
+   "bytes": 11548
+  },
+  {
+   "path": "assets/particles/raindrop.png",
+   "bytes": 1411
+  },
+  {
+   "path": "assets/particles/shadow-blob.png",
+   "bytes": 4123
+  },
+  {
+   "path": "assets/particles/smoke.png",
+   "bytes": 21132
+  },
+  {
+   "path": "assets/particles/soft-dot-warm.png",
+   "bytes": 12095
+  },
+  {
+   "path": "assets/particles/soft-dot.png",
+   "bytes": 6107
+  },
+  {
+   "path": "assets/particles/sparkle.png",
+   "bytes": 3866
+  },
+  {
+   "path": "assets/particles/speedline.png",
+   "bytes": 668
+  },
+  {
+   "path": "assets/particles/splash.png",
+   "bytes": 13558
+  },
+  {
+   "path": "assets/particles/tire-mark.png",
+   "bytes": 174
+  },
+  {
+   "path": "assets/textures/tex-asphalt.jpg",
+   "bytes": 40665
+  },
+  {
+   "path": "assets/textures/tex-bark.jpg",
+   "bytes": 8418
+  },
+  {
+   "path": "assets/textures/tex-forest-floor.jpg",
+   "bytes": 26448
+  },
+  {
+   "path": "assets/textures/tex-grass.jpg",
+   "bytes": 12648
+  },
+  {
+   "path": "assets/textures/tex-gravel.jpg",
+   "bytes": 57883
+  },
+  {
+   "path": "assets/textures/tex-leaves.jpg",
+   "bytes": 59262
+  },
+  {
+   "path": "assets/textures/tex-sand.jpg",
+   "bytes": 15955
+  },
+  {
+   "path": "assets/textures/tex-stone-wall.jpg",
+   "bytes": 20987
+  },
+  {
+   "path": "assets/textures/tex-water-normal.png",
+   "bytes": 165678
+  },
+  {
+   "path": "assets/textures/tex-wood-planks.jpg",
+   "bytes": 12237
+  },
+  {
+   "path": "assets/ui/hud-speedometer.svg",
+   "bytes": 8343
+  },
+  {
+   "path": "assets/ui/icons/icon-bike.svg",
+   "bytes": 303
+  },
+  {
+   "path": "assets/ui/icons/icon-camera.svg",
+   "bytes": 258
+  },
+  {
+   "path": "assets/ui/icons/icon-car.svg",
+   "bytes": 309
+  },
+  {
+   "path": "assets/ui/icons/icon-coin.svg",
+   "bytes": 358
+  },
+  {
+   "path": "assets/ui/icons/icon-drift.svg",
+   "bytes": 241
+  },
+  {
+   "path": "assets/ui/icons/icon-flag.svg",
+   "bytes": 228
+  },
+  {
+   "path": "assets/ui/icons/icon-gamepad.svg",
+   "bytes": 321
+  },
+  {
+   "path": "assets/ui/icons/icon-help.svg",
+   "bytes": 289
+  },
+  {
+   "path": "assets/ui/icons/icon-home.svg",
+   "bytes": 230
+  },
+  {
+   "path": "assets/ui/icons/icon-leaf.svg",
+   "bytes": 269
+  },
+  {
+   "path": "assets/ui/icons/icon-lock.svg",
+   "bytes": 237
+  },
+  {
+   "path": "assets/ui/icons/icon-minimap.svg",
+   "bytes": 252
+  },
+  {
+   "path": "assets/ui/icons/icon-mute.svg",
+   "bytes": 244
+  },
+  {
+   "path": "assets/ui/icons/icon-nitro.svg",
+   "bytes": 232
+  },
+  {
+   "path": "assets/ui/icons/icon-pause.svg",
+   "bytes": 218
+  },
+  {
+   "path": "assets/ui/icons/icon-play.svg",
+   "bytes": 217
+  },
+  {
+   "path": "assets/ui/icons/icon-settings.svg",
+   "bytes": 324
+  },
+  {
+   "path": "assets/ui/icons/icon-sound.svg",
+   "bytes": 264
+  },
+  {
+   "path": "assets/ui/icons/icon-speed.svg",
+   "bytes": 231
+  },
+  {
+   "path": "assets/ui/icons/icon-star.svg",
+   "bytes": 272
+  },
+  {
+   "path": "assets/ui/icons/icon-sun.svg",
+   "bytes": 339
+  },
+  {
+   "path": "assets/ui/icons/icon-timer.svg",
+   "bytes": 256
+  },
+  {
+   "path": "assets/ui/icons/icon-tree.svg",
+   "bytes": 236
+  },
+  {
+   "path": "assets/ui/icons/icon-trophy.svg",
+   "bytes": 289
+  },
+  {
+   "path": "assets/ui/icons/icon-wrench.svg",
+   "bytes": 309
+  },
+  {
+   "path": "assets/ui/logo-mark.svg",
+   "bytes": 685
+  },
+  {
+   "path": "assets/ui/logo.svg",
+   "bytes": 932
+  },
+  {
+   "path": "favicon.svg",
+   "bytes": 685
+  }
+ ]
+}

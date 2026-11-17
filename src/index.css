@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Nunito', 'Trebuchet MS', 'Arial Rounded MT Bold', sans-serif;
+    --font-body: 'Quicksand', 'Trebuchet MS', sans-serif;
+    --color-moss: #5BA55B;
+    --color-deep-forest: #1F3D2B;
+    --color-cream: #F5EFD9;
+    --color-amber: #F2B544;
+    --color-sunset: #E8913A;
+    --color-sky: #8CCBEA;
+    --color-coral: #E8735A;
+    --color-teal: #2FB3B0;
+    --color-bark: #6B4A2F;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--color-cream);
+    background-color: var(--color-deep-forest);
+    overflow: hidden;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+}
+
+.verdant-panel {
+  background: rgba(20, 42, 29, 0.62);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 20px;
+  border: 1px solid rgba(245, 239, 217, 0.14);
+  box-shadow: 0 12px 40px rgba(10, 24, 16, 0.35);
+}
+
+.verdant-panel-light {
+  background: rgba(31, 61, 43, 0.48);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  border: 1px solid rgba(245, 239, 217, 0.12);
+}
+
+.verdant-btn {
+  transition: all 0.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.verdant-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+}
+.verdant-btn:active:not(:disabled) {
+  transform: translateY(0px) scale(0.98);
+}
+
+/* Custom scrollbar for garage & modals */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(20, 42, 29, 0.3);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(91, 165, 91, 0.5);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(242, 181, 68, 0.7);
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes pulseBreath {
+  0%, 100% { opacity: 0.25; transform: scale(1); }
+  50% { opacity: 0.45; transform: scale(1.03); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-breath {
+  animation: pulseBreath 5s ease-in-out infinite;
+}

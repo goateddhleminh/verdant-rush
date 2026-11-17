@@ -1,0 +1,247 @@
+{
+ "palette": {
+  "moss": "#5BA55B",
+  "deepForest": "#1F3D2B",
+  "cream": "#F5EFD9",
+  "amber": "#F2B544",
+  "sunsetOrange": "#E8913A",
+  "skyBlue": "#8CCBEA",
+  "coral": "#E8735A",
+  "lakeTeal": "#2FB3B0",
+  "barkBrown": "#6B4A2F"
+ },
+ "liveries": [
+  {
+   "id": "moss",
+   "name": "Moss",
+   "color": "#5BA55B",
+   "accent": "#F5EFD9"
+  },
+  {
+   "id": "amber",
+   "name": "Amber",
+   "color": "#F2B544",
+   "accent": "#242628"
+  },
+  {
+   "id": "sunset",
+   "name": "Sunset",
+   "color": "#E8913A",
+   "accent": "#F5EFD9"
+  },
+  {
+   "id": "coral",
+   "name": "Coral",
+   "color": "#E8735A",
+   "accent": "#F5EFD9"
+  },
+  {
+   "id": "lake",
+   "name": "Lake",
+   "color": "#2FB3B0",
+   "accent": "#F5EFD9"
+  },
+  {
+   "id": "sky",
+   "name": "Sky",
+   "color": "#8CCBEA",
+   "accent": "#1F3D2B"
+  },
+  {
+   "id": "cream",
+   "name": "Cream",
+   "color": "#F5EFD9",
+   "accent": "#5BA55B"
+  },
+  {
+   "id": "forest",
+   "name": "Deep Forest",
+   "color": "#1F3D2B",
+   "accent": "#F2B544"
+  }
+ ],
+ "wheelStyles": [
+  {
+   "id": "sport",
+   "model": "models/vehicles/wheels/wheel-sport.glb"
+  },
+  {
+   "id": "mesh",
+   "model": "models/vehicles/wheels/wheel-mesh.glb"
+  },
+  {
+   "id": "turbine",
+   "model": "models/vehicles/wheels/wheel-turbine.glb"
+  },
+  {
+   "id": "offroad",
+   "model": "models/vehicles/wheels/wheel-offroad.glb"
+  },
+  {
+   "id": "classic",
+   "model": "models/vehicles/wheels/wheel-classic.glb"
+  }
+ ],
+ "fonts": {
+  "display": "Nunito, 'Trebuchet MS', 'Arial Rounded MT Bold', sans-serif",
+  "body": "Quicksand, 'Trebuchet MS', sans-serif",
+  "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,800;1,900&family=Quicksand:wght@500;600;700&display=swap"
+ },
+ "ui": {
+  "panel": "rgba(20,42,29,0.55)",
+  "panelBlur": "16px",
+  "radius": "20px",
+  "text": "#F5EFD9",
+  "accentCalm": "#5BA55B",
+  "accentRush": "#F2B544",
+  "shadow": "0 12px 40px rgba(10,24,16,0.35)"
+ },
+ "flow": {
+  "range": [
+   0,
+   100
+  ],
+  "seeSaw": 0.35,
+  "calmFov": 62,
+  "rushFov": 92,
+  "rushSaturationBoost": 0.15,
+  "fullRushSeconds": 6,
+  "zenLapBonusCash": 500,
+  "calmGain": {
+   "smoothDriving": 6,
+   "scenicSlow": 4,
+   "cleanLap": 20,
+   "photo": 8
+  },
+  "rushGain": {
+   "drift": 12,
+   "nitro": 15,
+   "draft": 8,
+   "nearMiss": 10,
+   "airTime": 9,
+   "boostPad": 14,
+   "overtake": 10
+  },
+  "drainPerSecond": 1.5
+ },
+ "lighting": {
+  "emerald-valley": {
+   "sun": {
+    "color": "#FFF1CF",
+    "intensity": 3,
+    "position": [
+     -120,
+     140,
+     80
+    ]
+   },
+   "hemi": {
+    "sky": "#BFE4F5",
+    "ground": "#6FA05A",
+    "intensity": 1
+   },
+   "fog": {
+    "color": "#CFE8F0",
+    "density": 0.0045
+   },
+   "skyTint": "#FFFFFF",
+   "exposure": 1,
+   "bloom": 0.25,
+   "vignette": 0.25,
+   "saturation": 1
+  },
+  "amber-woods": {
+   "sun": {
+    "color": "#FFC46B",
+    "intensity": 3.2,
+    "position": [
+     160,
+     70,
+     -100
+    ]
+   },
+   "hemi": {
+    "sky": "#F6D6A0",
+    "ground": "#8A5A33",
+    "intensity": 0.9
+   },
+   "fog": {
+    "color": "#F0D2A4",
+    "density": 0.0058
+   },
+   "skyTint": "#FFD9A8",
+   "exposure": 1.05,
+   "bloom": 0.32,
+   "vignette": 0.3,
+   "saturation": 1.08
+  },
+  "lakeside-haven": {
+   "sun": {
+    "color": "#FFFFFF",
+    "intensity": 3.4,
+    "position": [
+     60,
+     220,
+     40
+    ]
+   },
+   "hemi": {
+    "sky": "#A6DDF5",
+    "ground": "#9AB58A",
+    "intensity": 1.1
+   },
+   "fog": {
+    "color": "#BDE3F2",
+    "density": 0.003
+   },
+   "skyTint": "#E8F6FF",
+   "exposure": 1,
+   "bloom": 0.2,
+   "vignette": 0.2,
+   "saturation": 1
+  }
+ },
+ "qualityPresets": {
+  "low": {
+   "shadows": false,
+   "postprocessing": false,
+   "particles": 0.35,
+   "grass": 0.3,
+   "drawDistance": 350
+  },
+  "medium": {
+   "shadows": true,
+   "postprocessing": true,
+   "particles": 0.7,
+   "grass": 0.7,
+   "drawDistance": 600
+  },
+  "high": {
+   "shadows": true,
+   "postprocessing": true,
+   "particles": 1,
+   "grass": 1,
+   "drawDistance": 900
+  }
+ },
+ "particles": [
+  "particles/leaf-green.png",
+  "particles/leaf-amber.png",
+  "particles/leaf-gold.png",
+  "particles/petal-pollen.png",
+  "particles/smoke.png",
+  "particles/dust.png",
+  "particles/sparkle.png",
+  "particles/soft-dot.png",
+  "particles/soft-dot-warm.png",
+  "particles/nitro-flame-glow.png",
+  "particles/speedline.png",
+  "particles/raindrop.png",
+  "particles/lens-flare.png",
+  "particles/godray.png",
+  "particles/splash.png",
+  "particles/tire-mark.png",
+  "particles/shadow-blob.png",
+  "particles/confetti-leaf.png"
+ ]
+}

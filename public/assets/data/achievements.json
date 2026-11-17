@@ -1,0 +1,170 @@
+{
+ "version": 1,
+ "achievements": [
+  {
+   "id": "first-breath",
+   "name": "First Breath",
+   "description": "Finish your first race.",
+   "icon": "ui/icons/icon-flag.svg",
+   "stat": "racesFinished",
+   "target": 1,
+   "reward": {
+    "cash": 300
+   }
+  },
+  {
+   "id": "hat-trick",
+   "name": "Hat-trick",
+   "description": "Win three races.",
+   "icon": "ui/icons/icon-trophy.svg",
+   "stat": "racesWon",
+   "target": 3,
+   "reward": {
+    "cash": 800
+   }
+  },
+  {
+   "id": "cosy-hour",
+   "name": "Cosy Hour",
+   "description": "Stay 60 minutes in Relax Drive.",
+   "icon": "ui/icons/icon-sun.svg",
+   "stat": "relaxMinutes",
+   "target": 60,
+   "reward": {
+    "cash": 1000
+   }
+  },
+  {
+   "id": "drift-king",
+   "name": "Sideways Serenity",
+   "description": "Score 50,000 in a single drift.",
+   "icon": "ui/icons/icon-drift.svg",
+   "stat": "bestDrift",
+   "target": 50000,
+   "reward": {
+    "cash": 1000
+   }
+  },
+  {
+   "id": "nitro-nut",
+   "name": "Nitro Nut",
+   "description": "Use nitro 50 times.",
+   "icon": "ui/icons/icon-nitro.svg",
+   "stat": "nitroUses",
+   "target": 50,
+   "reward": {
+    "cash": 600
+   }
+  },
+  {
+   "id": "zen-lap",
+   "name": "Zen Lap",
+   "description": "Fill the Calm meter to 100%.",
+   "icon": "ui/icons/icon-leaf.svg",
+   "stat": "zenLaps",
+   "target": 1,
+   "reward": {
+    "cash": 700
+   }
+  },
+  {
+   "id": "rush-time",
+   "name": "Rush Time",
+   "description": "Fill the Rush meter to 100%.",
+   "icon": "ui/icons/icon-speed.svg",
+   "stat": "rushTimes",
+   "target": 1,
+   "reward": {
+    "cash": 700
+   }
+  },
+  {
+   "id": "air-time",
+   "name": "Air Time",
+   "description": "Stay airborne for 2 seconds.",
+   "icon": "ui/icons/icon-star.svg",
+   "stat": "longestAirSec",
+   "target": 2,
+   "reward": {
+    "cash": 500
+   }
+  },
+  {
+   "id": "near-miss",
+   "name": "Close Call",
+   "description": "Make 20 near misses.",
+   "icon": "ui/icons/icon-tree.svg",
+   "stat": "nearMisses",
+   "target": 20,
+   "reward": {
+    "cash": 500
+   }
+  },
+  {
+   "id": "photographer",
+   "name": "Postcard Moment",
+   "description": "Save 5 photos in Photo Mode.",
+   "icon": "ui/icons/icon-camera.svg",
+   "stat": "photos",
+   "target": 5,
+   "reward": {
+    "cash": 500
+   }
+  },
+  {
+   "id": "collector",
+   "name": "Garage Gardener",
+   "description": "Own 5 vehicles.",
+   "icon": "ui/icons/icon-car.svg",
+   "stat": "vehiclesOwned",
+   "target": 5,
+   "reward": {
+    "cash": 1200
+   }
+  },
+  {
+   "id": "two-wheels",
+   "name": "Two Wheels Good",
+   "description": "Win a race on a motorbike.",
+   "icon": "ui/icons/icon-bike.svg",
+   "stat": "bikeWins",
+   "target": 1,
+   "reward": {
+    "cash": 900
+   }
+  },
+  {
+   "id": "tuner",
+   "name": "Tune-Up",
+   "description": "Fully upgrade one category.",
+   "icon": "ui/icons/icon-wrench.svg",
+   "stat": "maxUpgrades",
+   "target": 1,
+   "reward": {
+    "cash": 800
+   }
+  },
+  {
+   "id": "all-tracks",
+   "name": "Valley to Lake",
+   "description": "Finish a race on every track.",
+   "icon": "ui/icons/icon-flag.svg",
+   "stat": "tracksFinished",
+   "target": 3,
+   "reward": {
+    "cash": 1500
+   }
+  },
+  {
+   "id": "wheelie",
+   "name": "Wheelie Wonder",
+   "description": "Hold a wheelie for 3 seconds.",
+   "icon": "ui/icons/icon-bike.svg",
+   "stat": "longestWheelieSec",
+   "target": 3,
+   "reward": {
+    "cash": 600
+   }
+  }
+ ]
+}

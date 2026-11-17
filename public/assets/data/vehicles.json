@@ -1,0 +1,3058 @@
+{
+ "version": 1,
+ "note": "Physics values are sensible starting points for a 120 Hz arcade model — tune freely.",
+ "vehicles": [
+  {
+   "id": "moss-hatch",
+   "name": "Moss Hatch",
+   "type": "car",
+   "description": "Balanced rally hatchback. The friendly starter.",
+   "price": 0,
+   "unlockLevel": 1,
+   "starter": true,
+   "defaultColor": "#5BA55B",
+   "defaultAccent": "#F5EFD9",
+   "model": "models/vehicles/cars/moss-hatch.glb",
+   "thumbnail": "images/thumbs/moss-hatch.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 6.1,
+    "acceleration": 4.7,
+    "handling": 7,
+    "grip": 7.2,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 1150,
+    "maxSpeedKmh": 175,
+    "accel0to100": 8.2,
+    "engineForceN": 4484,
+    "dragK": 1.044,
+    "rollingResistance": 0.015,
+    "downforce": 0.44,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.07,
+    "gripRear": 1.03,
+    "brakeForceN": 12650,
+    "steerLockDeg": 28,
+    "highSpeedSteerFactor": 0.42,
+    "steerSmoothing": 6,
+    "driftBias": 0.3,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 4,
+     "width": 1.76,
+     "height": 1.45
+    },
+    "wheelRadius": 0.32,
+    "trackHalf": 0.8
+   },
+   "modelStats": {
+    "triangles": 3634
+   }
+  },
+  {
+   "id": "ember-coupe",
+   "name": "Ember Coupe",
+   "type": "car",
+   "description": "Drift specialist with a loose rear end.",
+   "price": 9000,
+   "unlockLevel": 3,
+   "starter": false,
+   "defaultColor": "#E8913A",
+   "defaultAccent": "#242628",
+   "defaultWheel": "turbine",
+   "model": "models/vehicles/cars/ember-coupe.glb",
+   "thumbnail": "images/thumbs/ember-coupe.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 6.8,
+    "acceleration": 5.6,
+    "handling": 7.8,
+    "grip": 6.5,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 1250,
+    "maxSpeedKmh": 195,
+    "accel0to100": 6.8,
+    "engineForceN": 5877,
+    "dragK": 1.102,
+    "rollingResistance": 0.015,
+    "downforce": 0.49,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.09,
+    "gripRear": 0.91,
+    "brakeForceN": 13750,
+    "steerLockDeg": 28,
+    "highSpeedSteerFactor": 0.43,
+    "steerSmoothing": 6,
+    "driftBias": 0.8,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 4.3,
+     "width": 1.82,
+     "height": 1.3
+    },
+    "wheelRadius": 0.32,
+    "trackHalf": 0.83
+   },
+   "modelStats": {
+    "triangles": 3610
+   }
+  },
+  {
+   "id": "timberline-4x4",
+   "name": "Timberline 4x4",
+   "type": "car",
+   "description": "Heavy, fast, stable wagon with big tyres.",
+   "price": 12000,
+   "unlockLevel": 4,
+   "starter": false,
+   "defaultColor": "#3f6b4a",
+   "defaultAccent": "#F5EFD9",
+   "defaultWheel": "offroad",
+   "model": "models/vehicles/cars/timberline-4x4.glb",
+   "thumbnail": "images/thumbs/timberline-4x4.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 6.7,
+    "acceleration": 5.1,
+    "handling": 6.2,
+    "grip": 7.2,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 1900,
+    "maxSpeedKmh": 190,
+    "accel0to100": 7.5,
+    "engineForceN": 8099,
+    "dragK": 1.599,
+    "rollingResistance": 0.015,
+    "downforce": 0.47,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.05,
+    "gripRear": 1.06,
+    "brakeForceN": 20900,
+    "steerLockDeg": 29,
+    "highSpeedSteerFactor": 0.41,
+    "steerSmoothing": 6,
+    "driftBias": 0.15,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 4.5,
+     "width": 1.9,
+     "height": 1.8
+    },
+    "wheelRadius": 0.4,
+    "trackHalf": 0.845
+   },
+   "modelStats": {
+    "triangles": 5498
+   }
+  },
+  {
+   "id": "birch-sedan",
+   "name": "Birch Sedan",
+   "type": "car",
+   "description": "Relaxed family saloon.",
+   "price": 4000,
+   "unlockLevel": 1,
+   "starter": false,
+   "defaultColor": "#e9e4d3",
+   "defaultAccent": "#5BA55B",
+   "defaultWheel": "classic",
+   "model": "models/vehicles/cars/birch-sedan.glb",
+   "thumbnail": "images/thumbs/birch-sedan.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 6,
+    "acceleration": 4.3,
+    "handling": 6,
+    "grip": 7,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 1350,
+    "maxSpeedKmh": 170,
+    "accel0to100": 8.8,
+    "engineForceN": 4904,
+    "dragK": 1.21,
+    "rollingResistance": 0.015,
+    "downforce": 0.42,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.05,
+    "gripRear": 1.04,
+    "brakeForceN": 14850,
+    "steerLockDeg": 29,
+    "highSpeedSteerFactor": 0.41,
+    "steerSmoothing": 6,
+    "driftBias": 0.2,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 4.6,
+     "width": 1.8,
+     "height": 1.42
+    },
+    "wheelRadius": 0.32,
+    "trackHalf": 0.82
+   },
+   "modelStats": {
+    "triangles": 3302
+   }
+  },
+  {
+   "id": "pine-wagon",
+   "name": "Pine Wagon",
+   "type": "car",
+   "description": "Long-roof tourer with roof rack.",
+   "price": 5000,
+   "unlockLevel": 2,
+   "starter": false,
+   "defaultColor": "#2f6b3d",
+   "defaultAccent": "#F5EFD9",
+   "defaultWheel": "mesh",
+   "model": "models/vehicles/cars/pine-wagon.glb",
+   "thumbnail": "images/thumbs/pine-wagon.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 6.1,
+    "acceleration": 4.4,
+    "handling": 6,
+    "grip": 7,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 1450,
+    "maxSpeedKmh": 175,
+    "accel0to100": 8.6,
+    "engineForceN": 5390,
+    "dragK": 1.255,
+    "rollingResistance": 0.015,
+    "downforce": 0.44,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.05,
+    "gripRear": 1.04,
+    "brakeForceN": 15950,
+    "steerLockDeg": 29,
+    "highSpeedSteerFactor": 0.41,
+    "steerSmoothing": 6,
+    "driftBias": 0.2,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 4.7,
+     "width": 1.8,
+     "height": 1.5
+    },
+    "wheelRadius": 0.32,
+    "trackHalf": 0.82
+   },
+   "modelStats": {
+    "triangles": 3586
+   }
+  },
+  {
+   "id": "fox-gt",
+   "name": "Fox GT",
+   "type": "car",
+   "description": "Low grand tourer in amber.",
+   "price": 16000,
+   "unlockLevel": 6,
+   "starter": false,
+   "defaultColor": "#F2B544",
+   "defaultAccent": "#242628",
+   "defaultWheel": "turbine",
+   "model": "models/vehicles/cars/fox-gt.glb",
+   "thumbnail": "images/thumbs/fox-gt.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 7.5,
+    "acceleration": 6.2,
+    "handling": 7.4,
+    "grip": 7,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 1300,
+    "maxSpeedKmh": 215,
+    "accel0to100": 5.9,
+    "engineForceN": 7044,
+    "dragK": 1.086,
+    "rollingResistance": 0.015,
+    "downforce": 0.54,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.08,
+    "gripRear": 0.98,
+    "brakeForceN": 14300,
+    "steerLockDeg": 28,
+    "highSpeedSteerFactor": 0.42,
+    "steerSmoothing": 6,
+    "driftBias": 0.5,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 4.4,
+     "width": 1.85,
+     "height": 1.25
+    },
+    "wheelRadius": 0.32,
+    "trackHalf": 0.83
+   },
+   "modelStats": {
+    "triangles": 3634
+   }
+  },
+  {
+   "id": "maple-muscle",
+   "name": "Maple Muscle",
+   "type": "car",
+   "description": "Big-hearted muscle car with a hood scoop.",
+   "price": 18000,
+   "unlockLevel": 7,
+   "starter": false,
+   "defaultColor": "#c8553d",
+   "defaultAccent": "#F5EFD9",
+   "defaultWheel": "classic",
+   "model": "models/vehicles/cars/maple-muscle.glb",
+   "thumbnail": "images/thumbs/maple-muscle.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 7.7,
+    "acceleration": 6.4,
+    "handling": 5.5,
+    "grip": 5.8,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 1650,
+    "maxSpeedKmh": 220,
+    "accel0to100": 5.6,
+    "engineForceN": 9420,
+    "dragK": 1.387,
+    "rollingResistance": 0.015,
+    "downforce": 0.55,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.04,
+    "gripRear": 0.88,
+    "brakeForceN": 18150,
+    "steerLockDeg": 30,
+    "highSpeedSteerFactor": 0.4,
+    "steerSmoothing": 6,
+    "driftBias": 0.7,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 4.8,
+     "width": 1.9,
+     "height": 1.35
+    },
+    "wheelRadius": 0.32,
+    "trackHalf": 0.85
+   },
+   "modelStats": {
+    "triangles": 3938
+   }
+  },
+  {
+   "id": "acorn-kei",
+   "name": "Acorn Kei",
+   "type": "car",
+   "description": "Tiny boxy city car. Cute and nimble.",
+   "price": 2500,
+   "unlockLevel": 1,
+   "starter": false,
+   "defaultColor": "#F2B544",
+   "defaultAccent": "#F5EFD9",
+   "defaultWheel": "classic",
+   "model": "models/vehicles/cars/acorn-kei.glb",
+   "thumbnail": "images/thumbs/acorn-kei.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 4.9,
+    "acceleration": 2.8,
+    "handling": 8.2,
+    "grip": 7.7,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 750,
+    "maxSpeedKmh": 140,
+    "accel0to100": 11,
+    "engineForceN": 2180,
+    "dragK": 0.793,
+    "rollingResistance": 0.015,
+    "downforce": 0.35,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.1,
+    "gripRear": 1.06,
+    "brakeForceN": 8250,
+    "steerLockDeg": 27,
+    "highSpeedSteerFactor": 0.43,
+    "steerSmoothing": 6,
+    "driftBias": 0.3,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 3.3,
+     "width": 1.48,
+     "height": 1.55
+    },
+    "wheelRadius": 0.27,
+    "trackHalf": 0.69
+   },
+   "modelStats": {
+    "triangles": 3470
+   }
+  },
+  {
+   "id": "cedar-pickup",
+   "name": "Cedar Pickup",
+   "type": "car",
+   "description": "Farm truck with a hay-filled bed.",
+   "price": 6500,
+   "unlockLevel": 3,
+   "starter": false,
+   "defaultColor": "#a8452f",
+   "defaultAccent": "#F5EFD9",
+   "defaultWheel": "offroad",
+   "model": "models/vehicles/cars/cedar-pickup.glb",
+   "thumbnail": "images/thumbs/cedar-pickup.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 5.8,
+    "acceleration": 3.9,
+    "handling": 5,
+    "grip": 6.3,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 2000,
+    "maxSpeedKmh": 165,
+    "accel0to100": 9.4,
+    "engineForceN": 6802,
+    "dragK": 1.781,
+    "rollingResistance": 0.015,
+    "downforce": 0.41,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.02,
+    "gripRear": 0.97,
+    "brakeForceN": 22000,
+    "steerLockDeg": 30,
+    "highSpeedSteerFactor": 0.4,
+    "steerSmoothing": 6,
+    "driftBias": 0.35,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 5.1,
+     "width": 1.9,
+     "height": 1.75
+    },
+    "wheelRadius": 0.38,
+    "trackHalf": 0.85
+   },
+   "modelStats": {
+    "triangles": 5218
+   }
+  },
+  {
+   "id": "sunbeam-roadster",
+   "name": "Sunbeam Roadster",
+   "type": "car",
+   "description": "Open-top two-seater for sunny days.",
+   "price": 11000,
+   "unlockLevel": 4,
+   "starter": false,
+   "defaultColor": "#2FB3B0",
+   "defaultAccent": "#F5EFD9",
+   "defaultWheel": "sport",
+   "model": "models/vehicles/cars/sunbeam-roadster.glb",
+   "thumbnail": "images/thumbs/sunbeam-roadster.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 6.7,
+    "acceleration": 5.5,
+    "handling": 8,
+    "grip": 7.3,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 1050,
+    "maxSpeedKmh": 190,
+    "accel0to100": 7,
+    "engineForceN": 4796,
+    "dragK": 0.947,
+    "rollingResistance": 0.015,
+    "downforce": 0.47,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.1,
+    "gripRear": 1.01,
+    "brakeForceN": 11550,
+    "steerLockDeg": 28,
+    "highSpeedSteerFactor": 0.43,
+    "steerSmoothing": 6,
+    "driftBias": 0.45,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 3.9,
+     "width": 1.7,
+     "height": 1.2
+    },
+    "wheelRadius": 0.32,
+    "trackHalf": 0.77
+   },
+   "modelStats": {
+    "triangles": 3542
+   }
+  },
+  {
+   "id": "rally-fury",
+   "name": "Rally Fury",
+   "type": "car",
+   "description": "Wild rally hatch with a huge wing.",
+   "price": 20000,
+   "unlockLevel": 8,
+   "starter": false,
+   "defaultColor": "#4a86c8",
+   "defaultAccent": "#F2B544",
+   "defaultWheel": "mesh",
+   "model": "models/vehicles/cars/rally-fury.glb",
+   "thumbnail": "images/thumbs/rally-fury.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 7.2,
+    "acceleration": 6,
+    "handling": 7.6,
+    "grip": 6.8,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 1250,
+    "maxSpeedKmh": 205,
+    "accel0to100": 6.2,
+    "engineForceN": 6446,
+    "dragK": 1.093,
+    "rollingResistance": 0.015,
+    "downforce": 0.51,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.09,
+    "gripRear": 0.96,
+    "brakeForceN": 13750,
+    "steerLockDeg": 28,
+    "highSpeedSteerFactor": 0.43,
+    "steerSmoothing": 6,
+    "driftBias": 0.6,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 4,
+     "width": 1.84,
+     "height": 1.45
+    },
+    "wheelRadius": 0.34,
+    "trackHalf": 0.825
+   },
+   "modelStats": {
+    "triangles": 4042
+   }
+  },
+  {
+   "id": "aspen-suv",
+   "name": "Aspen SUV",
+   "type": "car",
+   "description": "Comfortable adventure SUV.",
+   "price": 8000,
+   "unlockLevel": 3,
+   "starter": false,
+   "defaultColor": "#8aa9b5",
+   "defaultAccent": "#F5EFD9",
+   "defaultWheel": "sport",
+   "model": "models/vehicles/cars/aspen-suv.glb",
+   "thumbnail": "images/thumbs/aspen-suv.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 6.3,
+    "acceleration": 4.5,
+    "handling": 5.8,
+    "grip": 7,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 1850,
+    "maxSpeedKmh": 180,
+    "accel0to100": 8.4,
+    "engineForceN": 7041,
+    "dragK": 1.549,
+    "rollingResistance": 0.015,
+    "downforce": 0.45,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.04,
+    "gripRear": 1.05,
+    "brakeForceN": 20350,
+    "steerLockDeg": 29,
+    "highSpeedSteerFactor": 0.41,
+    "steerSmoothing": 6,
+    "driftBias": 0.15,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 4.7,
+     "width": 1.92,
+     "height": 1.75
+    },
+    "wheelRadius": 0.38,
+    "trackHalf": 0.86
+   },
+   "modelStats": {
+    "triangles": 3466
+   }
+  },
+  {
+   "id": "lark-van",
+   "name": "Lark Camper Van",
+   "type": "car",
+   "description": "Cosy camper van that never rushes. Almost.",
+   "price": 3500,
+   "unlockLevel": 2,
+   "starter": false,
+   "defaultColor": "#F5EFD9",
+   "defaultAccent": "#E8735A",
+   "defaultWheel": "classic",
+   "model": "models/vehicles/cars/lark-van.glb",
+   "thumbnail": "images/thumbs/lark-van.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 5.3,
+    "acceleration": 2.2,
+    "handling": 4.5,
+    "grip": 6.3,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 2100,
+    "maxSpeedKmh": 150,
+    "accel0to100": 12,
+    "engineForceN": 5595,
+    "dragK": 1.772,
+    "rollingResistance": 0.015,
+    "downforce": 0.38,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.01,
+    "gripRear": 0.99,
+    "brakeForceN": 23100,
+    "steerLockDeg": 30,
+    "highSpeedSteerFactor": 0.39,
+    "steerSmoothing": 6,
+    "driftBias": 0.25,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 4.9,
+     "width": 1.95,
+     "height": 2.1
+    },
+    "wheelRadius": 0.35,
+    "trackHalf": 0.885
+   },
+   "modelStats": {
+    "triangles": 3962
+   }
+  },
+  {
+   "id": "willow-cabrio",
+   "name": "Willow Cabrio",
+   "type": "car",
+   "description": "Open-top coastal cruiser.",
+   "price": 9500,
+   "unlockLevel": 4,
+   "starter": false,
+   "defaultColor": "#E8735A",
+   "defaultAccent": "#F5EFD9",
+   "defaultWheel": "mesh",
+   "model": "models/vehicles/cars/willow-cabrio.glb",
+   "thumbnail": "images/thumbs/willow-cabrio.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 6.5,
+    "acceleration": 5.1,
+    "handling": 7,
+    "grip": 7,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 1250,
+    "maxSpeedKmh": 185,
+    "accel0to100": 7.6,
+    "engineForceN": 5258,
+    "dragK": 1.095,
+    "rollingResistance": 0.015,
+    "downforce": 0.46,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.07,
+    "gripRear": 1,
+    "brakeForceN": 13750,
+    "steerLockDeg": 28,
+    "highSpeedSteerFactor": 0.42,
+    "steerSmoothing": 6,
+    "driftBias": 0.4,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 4.2,
+     "width": 1.75,
+     "height": 1.3
+    },
+    "wheelRadius": 0.32,
+    "trackHalf": 0.795
+   },
+   "modelStats": {
+    "triangles": 3602
+   }
+  },
+  {
+   "id": "falcon-super",
+   "name": "Falcon Supercar",
+   "type": "car",
+   "description": "Wedge-shaped supercar. Pure speed.",
+   "price": 45000,
+   "unlockLevel": 12,
+   "starter": false,
+   "defaultColor": "#d94a3a",
+   "defaultAccent": "#F5EFD9",
+   "defaultWheel": "turbine",
+   "model": "models/vehicles/cars/falcon-super.glb",
+   "thumbnail": "images/thumbs/falcon-super.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 9.1,
+    "acceleration": 7.5,
+    "handling": 7.2,
+    "grip": 6.9,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 1350,
+    "maxSpeedKmh": 260,
+    "accel0to100": 3.9,
+    "engineForceN": 11067,
+    "dragK": 1.167,
+    "rollingResistance": 0.015,
+    "downforce": 0.65,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.08,
+    "gripRear": 0.98,
+    "brakeForceN": 14850,
+    "steerLockDeg": 28,
+    "highSpeedSteerFactor": 0.42,
+    "steerSmoothing": 6,
+    "driftBias": 0.5,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 4.5,
+     "width": 1.95,
+     "height": 1.15
+    },
+    "wheelRadius": 0.34,
+    "trackHalf": 0.86
+   },
+   "modelStats": {
+    "triangles": 3658
+   }
+  },
+  {
+   "id": "stoneback-crawler",
+   "name": "Stoneback Crawler",
+   "type": "car",
+   "description": "Lifted boxy 4x4 that climbs anything.",
+   "price": 14000,
+   "unlockLevel": 5,
+   "starter": false,
+   "defaultColor": "#a08c76",
+   "defaultAccent": "#242628",
+   "defaultWheel": "offroad",
+   "model": "models/vehicles/cars/stoneback-crawler.glb",
+   "thumbnail": "images/thumbs/stoneback-crawler.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 5.3,
+    "acceleration": 3.5,
+    "handling": 5.5,
+    "grip": 6.8,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 2200,
+    "maxSpeedKmh": 150,
+    "accel0to100": 10,
+    "engineForceN": 7033,
+    "dragK": 2.228,
+    "rollingResistance": 0.015,
+    "downforce": 0.38,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.04,
+    "gripRear": 1.03,
+    "brakeForceN": 24200,
+    "steerLockDeg": 30,
+    "highSpeedSteerFactor": 0.4,
+    "steerSmoothing": 6,
+    "driftBias": 0.2,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 3.9,
+     "width": 1.85,
+     "height": 1.9
+    },
+    "wheelRadius": 0.45,
+    "trackHalf": 0.805
+   },
+   "modelStats": {
+    "triangles": 5498
+   }
+  },
+  {
+   "id": "clover-compact",
+   "name": "Clover Compact",
+   "type": "car",
+   "description": "Zippy little hatch in spring green.",
+   "price": 3000,
+   "unlockLevel": 1,
+   "starter": false,
+   "defaultColor": "#86c45c",
+   "defaultAccent": "#F5EFD9",
+   "defaultWheel": "sport",
+   "model": "models/vehicles/cars/clover-compact.glb",
+   "thumbnail": "images/thumbs/clover-compact.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 5.6,
+    "acceleration": 4,
+    "handling": 7.6,
+    "grip": 7.4,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 950,
+    "maxSpeedKmh": 160,
+    "accel0to100": 9.2,
+    "engineForceN": 3301,
+    "dragK": 0.919,
+    "rollingResistance": 0.015,
+    "downforce": 0.4,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.09,
+    "gripRear": 1.05,
+    "brakeForceN": 10450,
+    "steerLockDeg": 28,
+    "highSpeedSteerFactor": 0.43,
+    "steerSmoothing": 6,
+    "driftBias": 0.3,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 3.6,
+     "width": 1.65,
+     "height": 1.45
+    },
+    "wheelRadius": 0.29,
+    "trackHalf": 0.76
+   },
+   "modelStats": {
+    "triangles": 3262
+   }
+  },
+  {
+   "id": "dune-runner",
+   "name": "Dune Runner",
+   "type": "car",
+   "description": "Open-frame buggy with a roll cage.",
+   "price": 15000,
+   "unlockLevel": 6,
+   "starter": false,
+   "defaultColor": "#F2B544",
+   "defaultAccent": "#242628",
+   "defaultWheel": "offroad",
+   "model": "models/vehicles/cars/dune-runner.glb",
+   "thumbnail": "images/thumbs/dune-runner.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 6.1,
+    "acceleration": 5.7,
+    "handling": 6.8,
+    "grip": 6.6,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 900,
+    "maxSpeedKmh": 175,
+    "accel0to100": 6.6,
+    "engineForceN": 4360,
+    "dragK": 1.015,
+    "rollingResistance": 0.015,
+    "downforce": 0.44,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.07,
+    "gripRear": 0.95,
+    "brakeForceN": 9900,
+    "steerLockDeg": 29,
+    "highSpeedSteerFactor": 0.42,
+    "steerSmoothing": 6,
+    "driftBias": 0.55,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 3.6,
+     "width": 1.9,
+     "height": 1.45
+    },
+    "wheelRadius": 0.4,
+    "trackHalf": 0.83
+   },
+   "modelStats": {
+    "triangles": 5162
+   }
+  },
+  {
+   "id": "heron-hothatch",
+   "name": "Heron Hot Hatch",
+   "type": "car",
+   "description": "Lowered, loud and lavender.",
+   "price": 17000,
+   "unlockLevel": 8,
+   "starter": false,
+   "defaultColor": "#9a7ad6",
+   "defaultAccent": "#F5EFD9",
+   "defaultWheel": "turbine",
+   "model": "models/vehicles/cars/heron-hothatch.glb",
+   "thumbnail": "images/thumbs/heron-hothatch.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 7,
+    "acceleration": 5.8,
+    "handling": 8,
+    "grip": 7,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 1200,
+    "maxSpeedKmh": 200,
+    "accel0to100": 6.4,
+    "engineForceN": 5994,
+    "dragK": 1.068,
+    "rollingResistance": 0.015,
+    "downforce": 0.5,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.1,
+    "gripRear": 0.97,
+    "brakeForceN": 13200,
+    "steerLockDeg": 28,
+    "highSpeedSteerFactor": 0.43,
+    "steerSmoothing": 6,
+    "driftBias": 0.6,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 3.95,
+     "width": 1.8,
+     "height": 1.4
+    },
+    "wheelRadius": 0.32,
+    "trackHalf": 0.81
+   },
+   "modelStats": {
+    "triangles": 3754
+   }
+  },
+  {
+   "id": "trail-bus",
+   "name": "Trail Bus",
+   "type": "car",
+   "description": "Retro minibus. Lots of seats, lots of charm.",
+   "price": 7500,
+   "unlockLevel": 3,
+   "starter": false,
+   "defaultColor": "#E8913A",
+   "defaultAccent": "#F5EFD9",
+   "defaultWheel": "classic",
+   "model": "models/vehicles/cars/trail-bus.glb",
+   "thumbnail": "images/thumbs/trail-bus.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 4.7,
+    "acceleration": 1,
+    "handling": 3.5,
+    "grip": 6.2,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 3200,
+    "maxSpeedKmh": 135,
+    "accel0to100": 14,
+    "engineForceN": 7307,
+    "dragK": 2.858,
+    "rollingResistance": 0.015,
+    "downforce": 0.34,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 0.99,
+    "gripRear": 1.01,
+    "brakeForceN": 35200,
+    "steerLockDeg": 31,
+    "highSpeedSteerFactor": 0.38,
+    "steerSmoothing": 6,
+    "driftBias": 0.1,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 6.2,
+     "width": 2,
+     "height": 2.5
+    },
+    "wheelRadius": 0.42,
+    "trackHalf": 0.9
+   },
+   "modelStats": {
+    "triangles": 4066
+   }
+  },
+  {
+   "id": "grove-classic",
+   "name": "Grove Classic",
+   "type": "car",
+   "description": "Rounded retro beauty from another era.",
+   "price": 5500,
+   "unlockLevel": 2,
+   "starter": false,
+   "defaultColor": "#7cbf5a",
+   "defaultAccent": "#F5EFD9",
+   "defaultWheel": "classic",
+   "model": "models/vehicles/cars/grove-classic.glb",
+   "thumbnail": "images/thumbs/grove-classic.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 5.1,
+    "acceleration": 2.5,
+    "handling": 6,
+    "grip": 6.7,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 900,
+    "maxSpeedKmh": 145,
+    "accel0to100": 11.5,
+    "engineForceN": 2502,
+    "dragK": 0.848,
+    "rollingResistance": 0.015,
+    "downforce": 0.36,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.05,
+    "gripRear": 0.99,
+    "brakeForceN": 9900,
+    "steerLockDeg": 29,
+    "highSpeedSteerFactor": 0.41,
+    "steerSmoothing": 6,
+    "driftBias": 0.35,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 3.8,
+     "width": 1.6,
+     "height": 1.5
+    },
+    "wheelRadius": 0.32,
+    "trackHalf": 0.72
+   },
+   "modelStats": {
+    "triangles": 3650
+   }
+  },
+  {
+   "id": "thistle-estate",
+   "name": "Thistle Estate",
+   "type": "car",
+   "description": "Vintage estate with a sunny disposition.",
+   "price": 6000,
+   "unlockLevel": 2,
+   "starter": false,
+   "defaultColor": "#b9b7aa",
+   "defaultAccent": "#6B4A2F",
+   "defaultWheel": "classic",
+   "model": "models/vehicles/cars/thistle-estate.glb",
+   "thumbnail": "images/thumbs/thistle-estate.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 5.4,
+    "acceleration": 3.2,
+    "handling": 5.5,
+    "grip": 6.8,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 1500,
+    "maxSpeedKmh": 155,
+    "accel0to100": 10.5,
+    "engineForceN": 4567,
+    "dragK": 1.355,
+    "rollingResistance": 0.015,
+    "downforce": 0.39,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.04,
+    "gripRear": 1.03,
+    "brakeForceN": 16500,
+    "steerLockDeg": 30,
+    "highSpeedSteerFactor": 0.4,
+    "steerSmoothing": 6,
+    "driftBias": 0.2,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 4.5,
+     "width": 1.75,
+     "height": 1.5
+    },
+    "wheelRadius": 0.32,
+    "trackHalf": 0.795
+   },
+   "modelStats": {
+    "triangles": 3638
+   }
+  },
+  {
+   "id": "comet-hyper",
+   "name": "Comet Hypercar",
+   "type": "car",
+   "description": "Deep-forest hypercar with amber accents.",
+   "price": 80000,
+   "unlockLevel": 15,
+   "starter": false,
+   "defaultColor": "#1F3D2B",
+   "defaultAccent": "#F2B544",
+   "defaultWheel": "mesh",
+   "model": "models/vehicles/cars/comet-hyper.glb",
+   "thumbnail": "images/thumbs/comet-hyper.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 10,
+    "acceleration": 7.9,
+    "handling": 7,
+    "grip": 6.9,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 1400,
+    "maxSpeedKmh": 285,
+    "accel0to100": 3.2,
+    "engineForceN": 13987,
+    "dragK": 1.227,
+    "rollingResistance": 0.015,
+    "downforce": 0.71,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.07,
+    "gripRear": 0.99,
+    "brakeForceN": 15400,
+    "steerLockDeg": 28,
+    "highSpeedSteerFactor": 0.42,
+    "steerSmoothing": 6,
+    "driftBias": 0.45,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 4.6,
+     "width": 2,
+     "height": 1.1
+    },
+    "wheelRadius": 0.35,
+    "trackHalf": 0.88
+   },
+   "modelStats": {
+    "triangles": 3898
+   }
+  },
+  {
+   "id": "lantern-taxi",
+   "name": "Lantern Taxi",
+   "type": "car",
+   "description": "The valley taxi, always on time.",
+   "price": 3800,
+   "unlockLevel": 1,
+   "starter": false,
+   "defaultColor": "#F2B544",
+   "defaultAccent": "#242628",
+   "defaultWheel": "classic",
+   "model": "models/vehicles/cars/lantern-taxi.glb",
+   "thumbnail": "images/thumbs/lantern-taxi.webp",
+   "modelNodes": [
+    "body",
+    "wheelpivot_FL/FR/RL/RR -> wheel_FL/FR/RL/RR",
+    "headlight_L/R",
+    "taillight_L/R",
+    "plate_F/R",
+    "exhaust_L/R",
+    "cam_hood"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 5.6,
+    "acceleration": 3.6,
+    "handling": 6.2,
+    "grip": 7,
+    "nitro": 6
+   },
+   "physics": {
+    "massKg": 1400,
+    "maxSpeedKmh": 160,
+    "accel0to100": 9.8,
+    "engineForceN": 4567,
+    "dragK": 1.272,
+    "rollingResistance": 0.015,
+    "downforce": 0.4,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.5,
+    "idleRpm": 900,
+    "redlineRpm": 7200,
+    "gears": [
+     3.4,
+     2.3,
+     1.7,
+     1.3,
+     1
+    ],
+    "finalDrive": 3.6,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.05,
+    "gripRear": 1.03,
+    "brakeForceN": 15400,
+    "steerLockDeg": 29,
+    "highSpeedSteerFactor": 0.41,
+    "steerSmoothing": 6,
+    "driftBias": 0.25,
+    "nitroSeconds": 3,
+    "nitroForceBoost": 0.35
+   },
+   "visual": {
+    "dimensions": {
+     "length": 4.6,
+     "width": 1.8,
+     "height": 1.45
+    },
+    "wheelRadius": 0.32,
+    "trackHalf": 0.82
+   },
+   "modelStats": {
+    "triangles": 3542
+   }
+  },
+  {
+   "id": "fern-250",
+   "name": "Fern 250",
+   "type": "bike",
+   "description": "Friendly trail scrambler. The starter bike.",
+   "price": 0,
+   "unlockLevel": 1,
+   "starter": true,
+   "defaultColor": "#E8913A",
+   "defaultAccent": "#F5EFD9",
+   "defaultWheel": "offroad",
+   "model": "models/vehicles/bikes/fern-250.glb",
+   "thumbnail": "images/thumbs/fern-250.webp",
+   "modelNodes": [
+    "frame",
+    "fork",
+    "wheel_F",
+    "wheel_R",
+    "rider",
+    "headlight",
+    "taillight",
+    "exhaust",
+    "cam_handlebar"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 5.3,
+    "acceleration": 6.4,
+    "handling": 8,
+    "grip": 7.6,
+    "nitro": 7
+   },
+   "physics": {
+    "massKg": 150,
+    "maxSpeedKmh": 150,
+    "accel0to100": 5.5,
+    "engineForceN": 872,
+    "dragK": 0.276,
+    "rollingResistance": 0.015,
+    "downforce": 0,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.55,
+    "idleRpm": 1400,
+    "redlineRpm": 10000,
+    "gears": [
+     3,
+     2.1,
+     1.6,
+     1.3,
+     1.1,
+     0.95
+    ],
+    "finalDrive": 3.2,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.1,
+    "gripRear": 1.06,
+    "brakeForceN": 1650,
+    "steerLockDeg": 28,
+    "highSpeedSteerFactor": 0.25,
+    "steerSmoothing": 7,
+    "driftBias": 0.3,
+    "nitroSeconds": 3.5,
+    "nitroForceBoost": 0.35,
+    "maxLeanDeg": 45,
+    "wheelieTorque": 1.1,
+    "stoppieDecel": 9
+   },
+   "visual": {
+    "dimensions": {
+     "length": 2.34,
+     "width": 0.75,
+     "height": 1.55
+    },
+    "wheelRadius": 0.31,
+    "maxLeanDeg": 45
+   },
+   "modelStats": {
+    "triangles": 5270
+   }
+  },
+  {
+   "id": "hawk-adventure",
+   "name": "Hawk Adventure",
+   "type": "bike",
+   "description": "Tall adventure tourer. Fast but twitchy.",
+   "price": 10000,
+   "unlockLevel": 4,
+   "starter": false,
+   "defaultColor": "#2FB3B0",
+   "defaultAccent": "#F5EFD9",
+   "defaultWheel": "mesh",
+   "model": "models/vehicles/bikes/hawk-adventure.glb",
+   "thumbnail": "images/thumbs/hawk-adventure.webp",
+   "modelNodes": [
+    "frame",
+    "fork",
+    "wheel_F",
+    "wheel_R",
+    "rider",
+    "headlight",
+    "taillight",
+    "exhaust",
+    "cam_handlebar"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 6.7,
+    "acceleration": 7.4,
+    "handling": 6,
+    "grip": 6.8,
+    "nitro": 7
+   },
+   "physics": {
+    "massKg": 230,
+    "maxSpeedKmh": 190,
+    "accel0to100": 4,
+    "engineForceN": 1838,
+    "dragK": 0.363,
+    "rollingResistance": 0.015,
+    "downforce": 0,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.55,
+    "idleRpm": 1400,
+    "redlineRpm": 10000,
+    "gears": [
+     3,
+     2.1,
+     1.6,
+     1.3,
+     1.1,
+     0.95
+    ],
+    "finalDrive": 3.2,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.05,
+    "gripRear": 1.01,
+    "brakeForceN": 2530,
+    "steerLockDeg": 28,
+    "highSpeedSteerFactor": 0.25,
+    "steerSmoothing": 7,
+    "driftBias": 0.3,
+    "nitroSeconds": 3.5,
+    "nitroForceBoost": 0.35,
+    "maxLeanDeg": 40,
+    "wheelieTorque": 0.94,
+    "stoppieDecel": 9
+   },
+   "visual": {
+    "dimensions": {
+     "length": 2.5799999999999996,
+     "width": 0.75,
+     "height": 1.6500000000000001
+    },
+    "wheelRadius": 0.34,
+    "maxLeanDeg": 40
+   },
+   "modelStats": {
+    "triangles": 3762
+   }
+  },
+  {
+   "id": "pebble-trials",
+   "name": "Pebble Trials",
+   "type": "bike",
+   "description": "Tiny trials bike. Super agile.",
+   "price": 6000,
+   "unlockLevel": 2,
+   "starter": false,
+   "defaultColor": "#F2B544",
+   "defaultAccent": "#242628",
+   "defaultWheel": "offroad",
+   "model": "models/vehicles/bikes/pebble-trials.glb",
+   "thumbnail": "images/thumbs/pebble-trials.webp",
+   "modelNodes": [
+    "frame",
+    "fork",
+    "wheel_F",
+    "wheel_R",
+    "rider",
+    "headlight",
+    "taillight",
+    "exhaust",
+    "cam_handlebar"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 3.9,
+    "acceleration": 6.8,
+    "handling": 9.5,
+    "grip": 8.2,
+    "nitro": 7
+   },
+   "physics": {
+    "massKg": 85,
+    "maxSpeedKmh": 110,
+    "accel0to100": 5,
+    "engineForceN": 543,
+    "dragK": 0.32,
+    "rollingResistance": 0.015,
+    "downforce": 0,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.55,
+    "idleRpm": 1400,
+    "redlineRpm": 10000,
+    "gears": [
+     3,
+     2.1,
+     1.6,
+     1.3,
+     1.1,
+     0.95
+    ],
+    "finalDrive": 3.2,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.14,
+    "gripRear": 1.1,
+    "brakeForceN": 935,
+    "steerLockDeg": 28,
+    "highSpeedSteerFactor": 0.25,
+    "steerSmoothing": 7,
+    "driftBias": 0.3,
+    "nitroSeconds": 3.5,
+    "nitroForceBoost": 0.35,
+    "maxLeanDeg": 52,
+    "wheelieTorque": 1.23,
+    "stoppieDecel": 9
+   },
+   "visual": {
+    "dimensions": {
+     "length": 2.09,
+     "width": 0.75,
+     "height": 1.4700000000000002
+    },
+    "wheelRadius": 0.29,
+    "maxLeanDeg": 52
+   },
+   "modelStats": {
+    "triangles": 5270
+   }
+  },
+  {
+   "id": "thorn-sport",
+   "name": "Thorn Sport",
+   "type": "bike",
+   "description": "Sleek sport bike with a full fairing.",
+   "price": 22000,
+   "unlockLevel": 9,
+   "starter": false,
+   "defaultColor": "#E8735A",
+   "defaultAccent": "#F5EFD9",
+   "defaultWheel": "turbine",
+   "model": "models/vehicles/bikes/thorn-sport.glb",
+   "thumbnail": "images/thumbs/thorn-sport.webp",
+   "modelNodes": [
+    "frame",
+    "fork",
+    "wheel_F",
+    "wheel_R",
+    "rider",
+    "headlight",
+    "taillight",
+    "exhaust",
+    "cam_handlebar"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 7.7,
+    "acceleration": 7.9,
+    "handling": 7,
+    "grip": 7.2,
+    "nitro": 7
+   },
+   "physics": {
+    "massKg": 190,
+    "maxSpeedKmh": 220,
+    "accel0to100": 3.2,
+    "engineForceN": 1898,
+    "dragK": 0.28,
+    "rollingResistance": 0.015,
+    "downforce": 0,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.55,
+    "idleRpm": 1400,
+    "redlineRpm": 10000,
+    "gears": [
+     3,
+     2.1,
+     1.6,
+     1.3,
+     1.1,
+     0.95
+    ],
+    "finalDrive": 3.2,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.07,
+    "gripRear": 1.03,
+    "brakeForceN": 2090,
+    "steerLockDeg": 28,
+    "highSpeedSteerFactor": 0.25,
+    "steerSmoothing": 7,
+    "driftBias": 0.3,
+    "nitroSeconds": 3.5,
+    "nitroForceBoost": 0.35,
+    "maxLeanDeg": 55,
+    "wheelieTorque": 1.02,
+    "stoppieDecel": 9
+   },
+   "visual": {
+    "dimensions": {
+     "length": 2.3499999999999996,
+     "width": 0.75,
+     "height": 1.4700000000000002
+    },
+    "wheelRadius": 0.32,
+    "maxLeanDeg": 55
+   },
+   "modelStats": {
+    "triangles": 3498
+   }
+  },
+  {
+   "id": "oak-cruiser",
+   "name": "Oak Cruiser",
+   "type": "bike",
+   "description": "Low and long, a chrome-clad cruiser.",
+   "price": 14000,
+   "unlockLevel": 5,
+   "starter": false,
+   "defaultColor": "#6B4A2F",
+   "defaultAccent": "#F2B544",
+   "defaultWheel": "mesh",
+   "model": "models/vehicles/bikes/oak-cruiser.glb",
+   "thumbnail": "images/thumbs/oak-cruiser.webp",
+   "modelNodes": [
+    "frame",
+    "fork",
+    "wheel_F",
+    "wheel_R",
+    "rider",
+    "headlight",
+    "taillight",
+    "exhaust",
+    "cam_handlebar"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 6,
+    "acceleration": 6.2,
+    "handling": 5.5,
+    "grip": 6.6,
+    "nitro": 7
+   },
+   "physics": {
+    "massKg": 310,
+    "maxSpeedKmh": 170,
+    "accel0to100": 5.8,
+    "engineForceN": 1709,
+    "dragK": 0.422,
+    "rollingResistance": 0.015,
+    "downforce": 0,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.55,
+    "idleRpm": 1400,
+    "redlineRpm": 10000,
+    "gears": [
+     3,
+     2.1,
+     1.6,
+     1.3,
+     1.1,
+     0.95
+    ],
+    "finalDrive": 3.2,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.04,
+    "gripRear": 1,
+    "brakeForceN": 3410,
+    "steerLockDeg": 28,
+    "highSpeedSteerFactor": 0.25,
+    "steerSmoothing": 7,
+    "driftBias": 0.3,
+    "nitroSeconds": 3.5,
+    "nitroForceBoost": 0.35,
+    "maxLeanDeg": 32,
+    "wheelieTorque": 0.78,
+    "stoppieDecel": 9
+   },
+   "visual": {
+    "dimensions": {
+     "length": 2.7199999999999998,
+     "width": 0.75,
+     "height": 1.4300000000000002
+    },
+    "wheelRadius": 0.33,
+    "maxLeanDeg": 32
+   },
+   "modelStats": {
+    "triangles": 3830
+   }
+  },
+  {
+   "id": "daisy-scooter",
+   "name": "Daisy Scooter",
+   "type": "bike",
+   "description": "Cute step-through scooter for lazy afternoons.",
+   "price": 2500,
+   "unlockLevel": 1,
+   "starter": false,
+   "defaultColor": "#F5EFD9",
+   "defaultAccent": "#E8735A",
+   "defaultWheel": "classic",
+   "model": "models/vehicles/bikes/daisy-scooter.glb",
+   "thumbnail": "images/thumbs/daisy-scooter.webp",
+   "modelNodes": [
+    "frame",
+    "fork",
+    "wheel_F",
+    "wheel_R",
+    "rider",
+    "headlight",
+    "taillight",
+    "exhaust",
+    "cam_handlebar"
+   ],
+   "paintMaterials": [
+    "Body_Paint",
+    "Accent"
+   ],
+   "stats": {
+    "speed": 3.2,
+    "acceleration": 4.8,
+    "handling": 7.5,
+    "grip": 7.4,
+    "nitro": 7
+   },
+   "physics": {
+    "massKg": 110,
+    "maxSpeedKmh": 90,
+    "accel0to100": 8,
+    "engineForceN": 440,
+    "dragK": 0.387,
+    "rollingResistance": 0.015,
+    "downforce": 0,
+    "wheelbaseM": 2.5,
+    "cgHeightM": 0.55,
+    "idleRpm": 1400,
+    "redlineRpm": 10000,
+    "gears": [
+     3,
+     2.1,
+     1.6,
+     1.3,
+     1.1,
+     0.95
+    ],
+    "finalDrive": 3.2,
+    "torqueCurve": [
+     [
+      0,
+      0.55
+     ],
+     [
+      0.25,
+      0.8
+     ],
+     [
+      0.5,
+      1
+     ],
+     [
+      0.75,
+      0.95
+     ],
+     [
+      1,
+      0.7
+     ]
+    ],
+    "gripFront": 1.09,
+    "gripRear": 1.05,
+    "brakeForceN": 1210,
+    "steerLockDeg": 28,
+    "highSpeedSteerFactor": 0.25,
+    "steerSmoothing": 7,
+    "driftBias": 0.3,
+    "nitroSeconds": 3.5,
+    "nitroForceBoost": 0.35,
+    "maxLeanDeg": 35,
+    "wheelieTorque": 1.18,
+    "stoppieDecel": 9
+   },
+   "visual": {
+    "dimensions": {
+     "length": 1.9,
+     "width": 0.75,
+     "height": 1.4700000000000002
+    },
+    "wheelRadius": 0.2,
+    "maxLeanDeg": 35
+   },
+   "modelStats": {
+    "triangles": 3426
+   }
+  }
+ ],
+ "upgrades": {
+  "levels": 5,
+  "costs": [
+   500,
+   1200,
+   2400,
+   4500,
+   8000
+  ],
+  "priceScaleByVehiclePrice": 0.0002,
+  "categories": {
+   "engine": {
+    "name": "Engine",
+    "icon": "icons/icon-wrench.svg",
+    "perLevel": {
+     "engineForceN": 0.04,
+     "maxSpeedKmh": 0.02
+    },
+    "desc": "More power and a higher top speed."
+   },
+   "tyres": {
+    "name": "Tyres",
+    "icon": "icons/icon-car.svg",
+    "perLevel": {
+     "gripFront": 0.03,
+     "gripRear": 0.03,
+     "brakeForceN": 0.04
+    },
+    "desc": "Better grip and shorter braking."
+   },
+   "nitro": {
+    "name": "Nitro",
+    "icon": "icons/icon-nitro.svg",
+    "perLevel": {
+     "nitroSeconds": 0.4,
+     "nitroRefill": 0.08
+    },
+    "desc": "Longer boosts that refill faster."
+   },
+   "chassis": {
+    "name": "Chassis",
+    "icon": "icons/icon-speed.svg",
+    "perLevel": {
+     "massKg": -0.015,
+     "steerLockDeg": 0.02,
+     "stability": 0.03
+    },
+    "desc": "Lighter, more stable and more agile."
+   }
+  }
+ },
+ "surfaces": {
+  "asphalt": {
+   "grip": 1,
+   "drag": 0
+  },
+  "gravel": {
+   "grip": 0.7,
+   "drag": 0.4
+  },
+  "grass": {
+   "grip": 0.55,
+   "drag": 1.2
+  },
+  "leaves": {
+   "grip": 0.65,
+   "drag": 0.1
+  },
+  "sand": {
+   "grip": 0.5,
+   "drag": 0.8
+  },
+  "puddle": {
+   "grip": 0.85,
+   "drag": 0.3
+  }
+ }
+}
