@@ -10,7 +10,7 @@ export const PauseModal: React.FC = () => {
   if (!store.isPaused || store.screen !== 'race') return null;
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-md flex items-center justify-center p-4 select-none animate-fade-in">
+    <div className="fixed inset-0 z-50 pointer-events-auto bg-black/60 backdrop-blur-md flex items-center justify-center p-4 select-none animate-fade-in">
       <div className="bg-zinc-950/90 border border-white/15 rounded-3xl p-6 md:p-8 max-w-sm w-full shadow-2xl flex flex-col items-center text-center">
         {/* Title */}
         <h2 className="text-2xl md:text-3xl font-black text-white tracking-tight uppercase">

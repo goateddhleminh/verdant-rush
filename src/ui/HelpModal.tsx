@@ -15,7 +15,7 @@ export const HelpModal: React.FC = () => {
   if (!store.helpOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 bg-black/75 backdrop-blur-md flex items-center justify-center p-3 md:p-6 select-none animate-fade-in overflow-y-auto">
+    <div className="fixed inset-0 z-50 pointer-events-auto bg-black/75 backdrop-blur-md flex items-center justify-center p-3 md:p-6 select-none animate-fade-in overflow-y-auto">
       <div className="bg-zinc-950/95 border border-white/15 rounded-3xl p-5 md:p-7 max-w-2xl w-full shadow-2xl flex flex-col gap-5 max-h-[90vh] overflow-y-auto">
         {/* Header */}
         <div className="flex items-center justify-between pb-3 border-b border-white/10">

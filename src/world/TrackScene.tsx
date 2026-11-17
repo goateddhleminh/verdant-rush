@@ -5,7 +5,7 @@ import { TrackId } from '../data/types';
 import { getGameData, getVehicleById } from '../data/gameData';
 import { getCachedTexture, loadGltfCached } from '../data/assetLoader';
 import { getDefaultCustomisation, useGameStore } from '../store/useGameStore';
-import { getActiveSession } from '../game/loop';
+import { ActiveRaceSession, createRaceSession, getActiveSession } from '../game/loop';
 import { InstancedProps } from './InstancedProps';
 import { LivingWorld } from './LivingWorld';
 import { VehicleMesh } from '../vehicles/VehicleMesh';
@@ -21,11 +21,24 @@ export const TrackScene: React.FC<{
   };
 }> = ({ photoSettings }) => {
   const screen = useGameStore((s) => s.screen);
+  const raceConfig = useGameStore((s) => s.raceConfig);
+  const restartToken = useGameStore((s) => s.raceRestartToken);
   const raceTrackId = useGameStore((s) => s.raceConfig.trackId);
   const gentleRain = useGameStore((s) => s.raceConfig.gentleRain);
   const selectedVehicleId = useGameStore((s) => s.selectedVehicleId);
   const settings = useGameStore((s) => s.settings);
   const customisations = useGameStore((s) => s.customisations);
+
+  const [session, setSession] = useState<ActiveRaceSession | null>(() => getActiveSession());
+
+  useEffect(() => {
+    if (screen === 'race') {
+      const sess = createRaceSession(raceConfig);
+      setSession(sess);
+    } else if (screen !== 'results') {
+      setSession(null);
+    }
+  }, [screen, restartToken, raceConfig]);
 
   const activeTrackId: TrackId =
     screen === 'race' || screen === 'results'
@@ -116,7 +129,6 @@ export const TrackScene: React.FC<{
 
   const playerVehicleDef = getVehicleById(selectedVehicleId);
   const playerCustomisation = customisations[selectedVehicleId] || getDefaultCustomisation(selectedVehicleId);
-  const session = getActiveSession();
 
   // Garage Turntable Scene
   if (screen === 'garage') {

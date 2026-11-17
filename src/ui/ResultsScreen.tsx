@@ -31,7 +31,7 @@ export const ResultsScreen: React.FC = () => {
   };
 
   return (
-    <div className="fixed inset-0 z-40 bg-black/80 backdrop-blur-md flex items-center justify-center p-4 md:p-6 select-none animate-fade-in overflow-y-auto">
+    <div className="fixed inset-0 z-40 pointer-events-auto bg-black/80 backdrop-blur-md flex items-center justify-center p-4 md:p-6 select-none animate-fade-in overflow-y-auto">
       <div className="bg-zinc-950/95 border border-white/15 rounded-3xl p-6 md:p-8 max-w-4xl w-full shadow-2xl flex flex-col gap-6 max-h-[92vh] overflow-y-auto">
         {/* Top Header: Finish Position */}
         <div className="text-center flex flex-col items-center">
