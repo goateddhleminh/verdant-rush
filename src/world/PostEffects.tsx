@@ -24,15 +24,16 @@ export const PostEffects: React.FC<{
   const photoMode = useGameStore((s) => s.photoMode);
   const screen = useGameStore((s) => s.screen);
 
-  const data = getGameData();
-  const preset = data.theme.qualityPresets[quality];
-  if (!preset.postprocessing) return null;
-
-  const lightCfg = data.theme.lighting[trackId] || data.theme.lighting['emerald-valley'];
   const session = getActiveSession();
   const flowSat = session?.flow.currentSaturation || 0;
   const flowChrom = reducedMotion ? 0 : session?.flow.currentChromatic || 0;
   const chromOffset = useMemo(() => new THREE.Vector2(flowChrom, flowChrom * 0.5), [flowChrom]);
+
+  const data = getGameData();
+  const preset = data.theme.qualityPresets[quality];
+  if (!preset || !preset.postprocessing) return null;
+
+  const lightCfg = data.theme.lighting[trackId] || data.theme.lighting['emerald-valley'];
 
   let filterSatOffset = 0;
   let filterHueOffset = photoWarmth * 0.05;
