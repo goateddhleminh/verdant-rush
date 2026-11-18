@@ -70,6 +70,30 @@ export const TrackScene: React.FC<{
           if ((obj as THREE.Mesh).isMesh) {
             const m = obj as THREE.Mesh;
             m.receiveShadow = true;
+
+            // Ensure vertex colors are properly normalized so they never overflow in shaders
+            if (m.geometry?.attributes?.color) {
+              const c = m.geometry.attributes.color;
+              if (!c.normalized && c.array instanceof Uint8Array) {
+                c.normalized = true;
+                c.needsUpdate = true;
+              }
+            }
+
+            if (m.material) {
+              const mat = m.material as THREE.MeshStandardMaterial;
+              if (mat.name === 'Terrain_Vertex') {
+                mat.roughness = 0.95;
+                mat.metalness = 0.0;
+              } else if (mat.name === 'Road_Gravel') {
+                mat.roughness = 0.9;
+                mat.metalness = 0.0;
+                if (!mat.map) {
+                  mat.color.set('#8C7355');
+                }
+              }
+            }
+
             if (m.name === 'water' || (m.material as THREE.Material)?.name?.includes('Water')) {
               const wMat = new THREE.MeshStandardMaterial({
                 color: '#2FB3B0',
@@ -136,17 +160,17 @@ export const TrackScene: React.FC<{
       <>
         <color attach="background" args={['#1F3D2B']} />
         <fogExp2 attach="fog" args={['#1F3D2B', 0.025]} />
-        <ambientLight intensity={0.8} color="#F5EFD9" />
-        <hemisphereLight args={['#FFF1CF', '#2b4c38', 1.2]} />
+        <ambientLight intensity={0.55} color="#F5EFD9" />
+        <hemisphereLight args={['#FFF1CF', '#2b4c38', 0.8]} />
         <directionalLight
           position={[6, 10, 6]}
-          intensity={2.8}
+          intensity={1.65}
           color="#FFF1CF"
           castShadow={qualityPreset.shadows}
         />
         <spotLight
           position={[-5, 7, -4]}
-          intensity={1.6}
+          intensity={1.0}
           color="#F2B544"
           angle={0.7}
         />
@@ -188,8 +212,8 @@ export const TrackScene: React.FC<{
         />
       </mesh>
 
-      {/* Fog & Warm Sunlit Lighting */}
-      <fogExp2 attach="fog" args={[lightCfg.fog.color, lightCfg.fog.density * 0.75]} />
+      {/* Crisp Foreground & Soft Distant Horizon Fog */}
+      <fog attach="fog" args={[lightCfg.fog.color, 120, 850]} />
       <hemisphereLight
         args={[lightCfg.hemi.sky, lightCfg.hemi.ground, lightCfg.hemi.intensity]}
       />
@@ -241,12 +265,12 @@ export const TrackScene: React.FC<{
       {/* Soft God-Ray Light Shafts through the trees */}
       {godrayTex &&
         godRayPositions.map((pos, i) => (
-          <sprite key={i} position={pos} scale={[22, 38, 1]}>
+          <sprite key={i} position={pos} scale={[18, 32, 1]}>
             <spriteMaterial
               map={godrayTex}
-              color={activeTrackId === 'amber-woods' ? '#FFC46B' : '#FFF1CF'}
+              color={activeTrackId === 'amber-woods' ? '#E8913A' : '#F5EFD9'}
               transparent
-              opacity={0.16}
+              opacity={0.045}
               blending={THREE.AdditiveBlending}
               depthWrite={false}
             />

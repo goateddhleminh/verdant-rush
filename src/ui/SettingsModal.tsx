@@ -212,6 +212,28 @@ export const SettingsModal: React.FC = () => {
               </p>
             </div>
 
+            {/* Brightness & Environmental Clarity */}
+            <div className="flex flex-col gap-1">
+              <div className="flex justify-between text-zinc-300">
+                <span className="font-semibold">Game Brightness & Exposure</span>
+                <span className="font-mono text-emerald-400">
+                  {Math.round((settings.brightness ?? 1.0) * 100)}%
+                </span>
+              </div>
+              <input
+                type="range"
+                min="0.5"
+                max="1.5"
+                step="0.05"
+                value={settings.brightness ?? 1.0}
+                onChange={(e) => store.updateSettings({ brightness: Number(e.target.value) })}
+                className="accent-emerald-400 h-1.5 bg-zinc-800 rounded-lg cursor-pointer"
+              />
+              <span className="text-[10px] text-zinc-500">
+                Adjusts lighting exposure. Lower values deepen forest shadows and make road details and foliage crisper.
+              </span>
+            </div>
+
             {/* Camera FOV */}
             <div className="flex flex-col gap-1">
               <div className="flex justify-between text-zinc-300">

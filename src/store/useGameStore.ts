@@ -45,6 +45,7 @@ export interface GameSettings {
   muted: boolean;
   quality: QualityLevel;
   baseFov: number;
+  brightness: number;
   cameraShake: number;
   speedUnits: 'kmh' | 'mph';
   steeringAssist: boolean;
@@ -140,6 +141,7 @@ const DEFAULT_SETTINGS: GameSettings = {
   muted: false,
   quality: 'medium',
   baseFov: 64,
+  brightness: 1.0,
   cameraShake: 0.75,
   speedUnits: 'kmh',
   steeringAssist: true,

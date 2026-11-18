@@ -1,4 +1,5 @@
 import React, { Suspense, useEffect, useRef, useState } from 'react';
+import * as THREE from 'three';
 import { Canvas } from '@react-three/fiber';
 import { useGameStore } from './store/useGameStore';
 import { bootstrapAssets } from './data/assetLoader';
@@ -138,6 +139,8 @@ export const App: React.FC = () => {
             antialias: true,
             powerPreference: 'high-performance',
             preserveDrawingBuffer: true, // Needed for Photo Mode canvas capture
+            toneMapping: THREE.ACESFilmicToneMapping,
+            toneMappingExposure: 0.95,
           }}
         >
           <Suspense fallback={null}>

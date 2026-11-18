@@ -1,11 +1,14 @@
 import React, { useMemo } from 'react';
 import * as THREE from 'three';
+import { ToneMappingMode } from 'postprocessing';
 import {
   Bloom,
+  BrightnessContrast,
   ChromaticAberration,
   DepthOfField,
   EffectComposer,
   HueSaturation,
+  ToneMapping,
   Vignette,
 } from '@react-three/postprocessing';
 import { TrackId } from '../data/types';
@@ -21,6 +24,7 @@ export const PostEffects: React.FC<{
 }> = ({ trackId, photoDof = 0, photoWarmth = 0, photoFilter = 'none' }) => {
   const quality = useGameStore((s) => s.settings.quality);
   const reducedMotion = useGameStore((s) => s.settings.reducedMotion);
+  const brightness = useGameStore((s) => s.settings.brightness ?? 1.0);
   const photoMode = useGameStore((s) => s.photoMode);
   const screen = useGameStore((s) => s.screen);
 
@@ -51,15 +55,21 @@ export const PostEffects: React.FC<{
 
   return (
     <EffectComposer multisampling={0}>
+      {/* Subtle highlight bloom only for true specular glints, tail lights, and sun reflections */}
       <Bloom
-        intensity={lightCfg.bloom * 1.1}
-        luminanceThreshold={0.78}
-        luminanceSmoothing={0.4}
+        intensity={Math.min(0.16, (lightCfg.bloom || 0.2) * 0.55)}
+        luminanceThreshold={0.93}
+        luminanceSmoothing={0.15}
         mipmapBlur
+      />
+      {/* Player-tunable brightness & enhanced clarity contrast */}
+      <BrightnessContrast
+        brightness={(brightness - 1.0) * 0.3}
+        contrast={0.06}
       />
       <HueSaturation
         hue={filterHueOffset}
-        saturation={Math.min(0.4, (lightCfg.saturation - 1) + flowSat + filterSatOffset)}
+        saturation={Math.min(0.32, (lightCfg.saturation - 1) * 0.5 + flowSat + filterSatOffset)}
       />
       <ChromaticAberration
         offset={chromOffset}
@@ -68,9 +78,11 @@ export const PostEffects: React.FC<{
       />
       <Vignette
         eskil={false}
-        offset={0.22}
+        offset={0.24}
         darkness={lightCfg.vignette + 0.12}
       />
+      {/* ACES Filmic Tone Mapping preserves rich dark forest shadows and prevents clipped whiteout */}
+      <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />
       {showDof ? (
         <DepthOfField
           focusDistance={0.015}

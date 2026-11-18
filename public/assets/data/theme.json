@@ -128,7 +128,7 @@
   "emerald-valley": {
    "sun": {
     "color": "#FFF1CF",
-    "intensity": 3,
+    "intensity": 1.6,
     "position": [
      -120,
      140,
@@ -136,24 +136,24 @@
     ]
    },
    "hemi": {
-    "sky": "#BFE4F5",
-    "ground": "#6FA05A",
-    "intensity": 1
+    "sky": "#89C5E2",
+    "ground": "#3B5E33",
+    "intensity": 0.65
    },
    "fog": {
-    "color": "#CFE8F0",
-    "density": 0.0045
+    "color": "#7EABA0",
+    "density": 0.0016
    },
-   "skyTint": "#FFFFFF",
-   "exposure": 1,
-   "bloom": 0.25,
-   "vignette": 0.25,
+   "skyTint": "#CBE7F5",
+   "exposure": 0.95,
+   "bloom": 0.18,
+   "vignette": 0.28,
    "saturation": 1
   },
   "amber-woods": {
    "sun": {
-    "color": "#FFC46B",
-    "intensity": 3.2,
+    "color": "#F5B460",
+    "intensity": 1.7,
     "position": [
      160,
      70,
@@ -161,24 +161,24 @@
     ]
    },
    "hemi": {
-    "sky": "#F6D6A0",
-    "ground": "#8A5A33",
-    "intensity": 0.9
+    "sky": "#E6B87A",
+    "ground": "#633E20",
+    "intensity": 0.6
    },
    "fog": {
-    "color": "#F0D2A4",
-    "density": 0.0058
+    "color": "#9E7548",
+    "density": 0.0018
    },
-   "skyTint": "#FFD9A8",
-   "exposure": 1.05,
-   "bloom": 0.32,
-   "vignette": 0.3,
-   "saturation": 1.08
+   "skyTint": "#F0C58A",
+   "exposure": 0.95,
+   "bloom": 0.2,
+   "vignette": 0.32,
+   "saturation": 1.05
   },
   "lakeside-haven": {
    "sun": {
-    "color": "#FFFFFF",
-    "intensity": 3.4,
+    "color": "#F4F7FA",
+    "intensity": 1.75,
     "position": [
      60,
      220,
@@ -186,18 +186,18 @@
     ]
    },
    "hemi": {
-    "sky": "#A6DDF5",
-    "ground": "#9AB58A",
-    "intensity": 1.1
+    "sky": "#78BBE0",
+    "ground": "#567A4E",
+    "intensity": 0.65
    },
    "fog": {
-    "color": "#BDE3F2",
-    "density": 0.003
+    "color": "#5D8FA8",
+    "density": 0.0014
    },
-   "skyTint": "#E8F6FF",
-   "exposure": 1,
-   "bloom": 0.2,
-   "vignette": 0.2,
+   "skyTint": "#BEE0F2",
+   "exposure": 0.95,
+   "bloom": 0.16,
+   "vignette": 0.26,
    "saturation": 1
   }
  },

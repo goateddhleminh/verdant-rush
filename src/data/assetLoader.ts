@@ -73,6 +73,19 @@ export function loadGltfCached(path: string): Promise<GLTF> {
     gltfLoader.load(
       url,
       (gltf) => {
+        // Ensure vertex colors never overflow shader values
+        gltf.scene.traverse((obj) => {
+          if ((obj as THREE.Mesh).isMesh) {
+            const m = obj as THREE.Mesh;
+            if (m.geometry?.attributes?.color) {
+              const c = m.geometry.attributes.color;
+              if (!c.normalized && c.array instanceof Uint8Array) {
+                c.normalized = true;
+                c.needsUpdate = true;
+              }
+            }
+          }
+        });
         gltfCache.set(url, gltf);
         resolve(gltf);
       },
